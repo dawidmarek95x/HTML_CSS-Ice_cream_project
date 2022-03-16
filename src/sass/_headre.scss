@@ -1,0 +1,36 @@
+.header-section {
+    min-width: 320px;
+    padding: 6px 20px;
+    &__menu {
+        display: flex;
+
+}
+}
+.menu-logo__link__logo {
+    width: 199px;
+    height: 50px;
+}
+.menu-nav {
+    display: none;
+}
+
+.menu-mobile-open-bnt{
+    border: none;
+    background-color: transparent;
+    margin-top: 25px;
+    width: 22px;
+    height: 14px;
+    
+    &__icon {
+    width: 20px;
+    height: 14px;
+    fill: #D41443;
+}
+}
+
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}

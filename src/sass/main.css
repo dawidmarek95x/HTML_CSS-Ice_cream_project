@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
+.header-section {
+  min-width: 320px;
+  padding: 6px 20px;
+}
+.header-section__menu {
+  display: flex;
+}
+
+.menu-logo__link__logo {
+  width: 199px;
+  height: 50px;
+}
+
+.menu-nav {
+  display: none;
+}
+
+.menu-mobile-open-bnt {
+  border: none;
+  background-color: transparent;
+  margin-top: 25px;
+  width: 22px;
+  height: 14px;
+}
+.menu-mobile-open-bnt__icon {
+  width: 20px;
+  height: 14px;
+  fill: #D41443;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}/*# sourceMappingURL=main.css.map */
