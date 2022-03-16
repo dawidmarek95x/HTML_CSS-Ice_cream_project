@@ -1,38 +1,38 @@
-.header-section {
-    min-width: 320px;
-    padding: 6px 20px;
-    &__menu {
-        display: flex;
-        justify-content: space-between;
+// .header-section {
+//     min-width: 320px;
+//     padding: 6px 20px;
+//     &__menu {
+//         display: flex;
+//         justify-content: space-between;
 
 
-}
-}
-.menu-logo__link__logo {
-    width: 199px;
-    height: 50px;
-}
-.menu-nav,
-.menu-buy-bnt {
-    display: none;
-}
+// }
+// }
+// .menu-logo__link__logo {
+//     width: 199px;
+//     height: 50px;
+// }
+// .menu-nav,
+// .menu-buy-bnt {
+//     display: none;
+// }
 
-.menu-mobile-open-bnt{
-    border: none;
-    background-color: transparent;
-    // margin-top: 25px;
+// .menu-mobile-open-bnt{
+//     border: none;
+//     background-color: transparent;
+//     // margin-top: 25px;
     
     
-    &__icon {
-    width: 20px;
-    height: 14px;
-    fill: #D41443;
-}
-}
+//     &__icon {
+//     width: 20px;
+//     height: 14px;
+//     fill: #D41443;
+// }
+// }
 
 
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
+// .is-hidden {
+//   visibility: hidden;
+//   opacity: 0;
+//   pointer-events: none;
+// }
