@@ -3,7 +3,15 @@
     <p class="about__label">tradition and love</p>
     <h2 class="about__header">how it&#8217;s made&#63;</h2>
     <div class="about__description-space">
-      <img class="about__image" src="/src/images/about/about_cow.png" alt="happy cow and milk">
+      <picture>
+        <source srcset="/src/images/about/desktop/about_cow_desktop.png 1x, /src/images/about/desktop/about_cow_desktop@2x.png 2x"
+                media="(min-width: 1200px)">
+        <source srcset="/src/images/about/tablet/about_cow_tablet.png 1x, /src/images/about/tablet/about_cow_tablet@2x.png 2x"
+                media="(min-width: 768px)">
+        <source srcset="/src/images/about/about_cow.png 1x, /src/images/about/about_cow@2x.png 2x"
+                media="(min-width: 320px)">
+        <img class="about__image" src="/src/images/about/about_cow.png" alt="happy cow and milk">
+      </picture>
       <div class="about__description">
         <p class="about__description-item-first">Fusce ut velit laoreet&#44; tempus arcu eu&#44; molestie tortor&#46; Nam vel justo cursus&#44; faucibus lorem eget&#44; egestas eros&#46; Maecenas eleifend erat at justo fringilla&#46;</p>
         <p class="about__description-item-second">Curabitur lacinia enim at ex blandit&#44; vel pellentesque odio elementum&#46; Mauris rhoncus orci in imperdiet placerat&#46; Vestibulum euismod nisl suscipit ligula volutpat&#44; a feugiat urna maximus&#46; Cras massa nibh&#44; tincidunt&#46; Aliquam erat volutpat&#46; Aenean accumsan&#46;</p>
