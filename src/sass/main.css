@@ -9,6 +9,7 @@
 }
 .header-section__menu {
   display: flex;
+  justify-content: space-between;
 }
 
 .menu-logo__link__logo {
@@ -16,16 +17,14 @@
   height: 50px;
 }
 
-.menu-nav {
+.menu-nav,
+.menu-buy-bnt {
   display: none;
 }
 
 .menu-mobile-open-bnt {
   border: none;
   background-color: transparent;
-  margin-top: 25px;
-  width: 22px;
-  height: 14px;
 }
 .menu-mobile-open-bnt__icon {
   width: 20px;
