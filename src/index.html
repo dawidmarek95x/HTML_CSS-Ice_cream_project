@@ -2,22 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nagłówek strony</title>
+    <title>IceCream</title>
+    <meta
+      name="description"
+      content="Home page of the IceCream company"
+    />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap">
   </head>
   <body>
     <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
     <!-- <include src="./partials/example.html"></include> -->
 
     <main class="main-section">
-      <!-- PONIŻEJ DODAJEMY <INCLUDE> DLA MAINA -->
-        <include src="./partials/advantages.html"></include>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/products.html"></include>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/advantages.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/reviews.html"></include>
+      <include src="./partials/contacts.html"></include>
     </main>
 
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony plik SASS. -->
