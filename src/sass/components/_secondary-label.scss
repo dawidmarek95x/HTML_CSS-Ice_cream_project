@@ -1,0 +1,23 @@
+.secondary-label {
+  font-family: $secondaryFont;
+  font-size: $fontSizeLabelMobile;
+  line-height: 1.167;
+  text-align: center;
+  text-transform: uppercase;
+  color: $colorTheme2;
+}
+
+@media screen and (min-width: 768px) {
+  .secondary-label {
+    font-size: $fontSizeLabelTablet;
+    line-height: 1.154;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .secondary-label {
+    font-size: $fontSizeLabelDesktop;
+    line-height: 1.133;
+    letter-spacing: 0.04em;
+  }
+}

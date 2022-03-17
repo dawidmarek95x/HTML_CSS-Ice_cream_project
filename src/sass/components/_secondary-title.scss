@@ -1,0 +1,24 @@
+.secondary-title {
+  font-family: $secondaryFont;
+  font-size: $fontSizeHeaderMobile;
+  line-height: 1.147;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $mainColor;
+}
+
+@media screen and (min-width: 768px) {
+  .secondary-title {
+    font-size: $fontSizeHeaderTablet;
+    line-height: 1.146;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .secondary-title {
+    font-size: $fontSizeHeaderDesktop;
+    line-height: 1.138;
+    letter-spacing: 0.06em;
+  }
+}

@@ -1,11 +1,39 @@
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
+// Główny plik dla stylów.
+// Wszystkie komponenty podłączamy tutaj.
 
-// Style dla pliku z przykładem HTML fragmentu
-// @import './example';
+// ZMIENNE
+@import './utils/variables';
+
+// USTAWIENIA BAZOWE
+@import './base/common';
+@import './base/container';
+
+// KOMPONENTY UNIWERSALNE
+@import './components/secondary-label';
+@import './components/secondary-title';
 @import './components/modal';
 @import './components/application-form';
 
+// KOMPONENTY LAYOUT'U
+// KOMPONENTY SEKCJI HEADER
 @import "./layout/header";
+
+// KOMPONENTY SEKCJI PRODUCTS
+
+
+// KOMPONENTY SEKCJI ABOUT
+
+
+// KOMPONENTY SEKCJI ADVANTAGES
+
+
+// KOMPONENTY SEKCJI GALLERY
+
+
+// KOMPONENTY SEKCJI REVIEWS
+
+
+// KOMPONENTY SEKCJI CONTACTS
+
+
+// KOMPONENTY SEKCJI FOOTER
