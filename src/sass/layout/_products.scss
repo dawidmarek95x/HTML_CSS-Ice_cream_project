@@ -4,14 +4,12 @@
 .product {
   &__cards {
     width: 100%;
-    max-width: 280px;
     margin: 0 auto;
   }
   &__card {
     position: relative;
     margin-bottom: 130px;
     padding: 161px 39px 41px 41px;
-    height: 485px;
     border-radius: $radiusPrimary;
     color: $colorFont3;
     text-align: center;
@@ -27,8 +25,8 @@
       content: '';
       position: absolute;
       left: 50%;
-      top: 0%;
-      transform: translate(-50%,-50%);
+      top: -113px;
+      transform: translateX(-50%);
       width: 249px;
       height: 252px;
     }
@@ -55,6 +53,7 @@
     }
   }
   &__title {
+    position: relative;
     font-family: $secondaryFont;
     font-size: $fontSizeProductHeader;
     font-weight: normal;
@@ -64,7 +63,7 @@
       content: '';
       position: absolute;
       left: 50%;
-      top: 214px;
+      top: 53px;
       transform: translateX(-50%);
       width: 26px;
       height: 6px;
@@ -72,7 +71,7 @@
     }
   }
   &__text {
-    margin: 68px 0 30px;
+    margin: 66px 0 30px;
     font-weight: $fontBold;
     font-size: $fontSizeSecondary;
     line-height: 152%;
