@@ -1,0 +1,40 @@
+.reviews {
+  padding: 80px 0 86px;
+}
+.sliders {
+  list-style: none;
+}
+.slider {
+  margin: 0 auto;
+  width: 280px;
+  border: 1px solid red;
+  &__img {
+    margin: 0 auto 29px;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+  }
+  &__opinion {
+    padding: 43px 66px 26px 57px;
+    width: 280px;
+    background-color: $colorBg7;
+    font-weight: $fontMedium;
+    font-size: $fontSizePrimaryMobile;
+    line-height: 255%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $colorFont1;
+  }
+  &__text {
+    position: relative;
+    &::after {
+      position: absolute;
+      top: 28px;
+      left: -7px;
+      content: '';
+      width: 180px;
+      height: 220px;
+      background-image: url('../images/icons/mobile_reviews_line.svg');
+    }
+  }
+}
