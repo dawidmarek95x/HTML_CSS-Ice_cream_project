@@ -57,7 +57,7 @@
     font-family: $secondaryFont;
     font-size: $fontSizeProductHeader;
     font-weight: normal;
-    line-height: 23px;
+    line-height: 1.15;
     text-transform: uppercase;
     &::after{
       content: '';
