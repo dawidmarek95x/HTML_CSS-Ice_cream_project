@@ -1,0 +1,85 @@
+//  Mobile styling
+
+// Not displayed elements in mobile view
+.hero__image--milk,
+.hero__description,
+.hero__spots,
+.hero__image--girl {
+  display: none;
+}
+
+.hero {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 20px;
+    background-image: url(../images/hero/hero-icecream.png), url(../images/hero/hero-ellipse.png);
+    background-size: 150px, 95%;
+    background-position: 80% 100%, 350% 30%;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  position: relative;
+  margin: 0 auto;
+  background: $colorBg1;
+
+  &__header {
+    width: 218px;
+    margin-bottom: 20px;
+    font-family: $secondaryFont;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    &--bigger {
+      margin-top: 5px;
+      line-height: 45px;
+      font-size: 48px;
+      color: #d41443;
+    }
+  }
+  &__buttons {
+    display: flex;
+
+    margin: 8px;
+    gap: 8px;
+  }
+  &__button {
+    &--left,
+    &--right {
+      font-size: 8px;
+      height: 20px;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-weight: 400;
+      text-decoration: none;
+      transition: $transition;
+    }
+    &--left {
+      color: $colorFont3;
+      background: $btnColor1;
+
+      &:hover,
+      &:focus {
+        background: $btnHovercolor1;
+      }
+    }
+    &--right {
+      color: $colorFont4;
+      background: $btnColor2;
+
+      &:hover,
+      &:focus {
+        background: $btnHoverColor2;
+      }
+    }
+  }
+  //   &__image--icecream {
+  //       position:absolute;
+  //       z-index:-1;
+  //       top: 0;left: 0;
+  //   }
+}

@@ -22,6 +22,10 @@ ul {
   padding: 0;
 }
 
+ul, ol, dl, li {
+  list-style: none;
+}
+
 img {
   display: block;
 }

@@ -31,6 +31,13 @@ $colorTheme2: #ffa5ba;
 $colorFont1: #000000;
 $colorFont2: #907e82;
 $colorFont3: #ffffff;
+$colorFont4: #d41443;
+
+$btnColor1: #d41443;
+$btnColor2:#fff;
+
+$btnHovercolor1:#c7133e;
+$btnHoverColor2:#ecebeb;
 
 $icoFill1: #fea5bb;
 $icoFill2: #d31342;
@@ -45,3 +52,5 @@ $radiusPrimary: 24px;
 $radiusSecondary: 6px;
 $radiusBtnPrimary: 22px;
 $radiusBtnSecondary: 20px;
+
+$transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
