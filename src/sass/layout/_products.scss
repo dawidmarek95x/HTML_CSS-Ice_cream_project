@@ -16,6 +16,7 @@
     color: $colorFont3;
     text-align: center;
     letter-spacing: 0.04em;
+    transition: transform $mainTransition;
     &:first-child {
       margin-top: 144px;
     }
@@ -30,6 +31,9 @@
       transform: translate(-50%,-50%);
       width: 249px;
       height: 252px;
+    }
+    &:hover{
+      transform: scale(0.9);
     }
     &--first {
       background-color: $colorBg1;
