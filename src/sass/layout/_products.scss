@@ -14,7 +14,6 @@
     color: $colorFont3;
     text-align: center;
     letter-spacing: 0.04em;
-    transition: transform $mainTransition;
     &:first-child {
       margin-top: 144px;
     }
@@ -30,8 +29,8 @@
       width: 249px;
       height: 252px;
     }
-    &:hover{
-      transform: scale(0.9);
+    &:hover::before {
+      animation: fadeIn 800ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     &--first {
       background-color: $colorBg1;
