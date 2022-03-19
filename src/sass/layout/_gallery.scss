@@ -1,0 +1,17 @@
+.gallery {
+  background-image: linear-gradient(
+    to bottom, 
+    $colorBg3 40%,
+    $colorTheme1 40%,
+    $colorTheme1 100%
+    );
+}
+
+.gallery .container {
+  padding: 0;
+}
+
+.gallery__image {
+  display: block;
+  margin: 0 auto;
+}
