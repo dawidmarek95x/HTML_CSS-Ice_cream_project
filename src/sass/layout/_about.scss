@@ -1,20 +1,21 @@
-@mixin abouteSetup {
+@mixin about_bg_properties {
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: left bottom;
+  background-position: center bottom;
   background-color: $colorBg3;  
 }
 
 .about {
+  padding: 125px 0 39px 0;
   background-image: url(../images/about/about_milk.png);
-  @include abouteSetup;
+  @include about_bg_properties;
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .about {
       background-image: url(../images/about/about_milk@2x.png);
-      @include abouteSetup;
+      @include about_bg_properties;
   }
 }
 
@@ -26,6 +27,7 @@
 }
 
 .about__descriptions {
+  text-align: left;
   min-width: 220px;
   padding-top: 46px;
 }
@@ -33,7 +35,7 @@
 .about__description-upper {
   line-height: 1.58;
   font-weight: $fontMedium;
-  margin-bottom: 47px;
+  margin-bottom: 31px;
 }
 
 .about__description-lower {
@@ -52,7 +54,7 @@
   color: $mainColor;
   font-size: $fontSizeSecondary;
   font-weight: $fontBold;
-  transition: background-color 250ms;
+  // transition: background-color $mainTransition;
     &:hover,
     &:focus {
       background-color: $colorHoverPrimary;
@@ -65,30 +67,30 @@
 
 .about__btn-ico {
   display: block;
-  width: 8px;
-  height: 10px;
 }
 
 // -----------------768-----------------
 @media screen and (min-width: 768px) {
   .about {
+    padding: 130px 0 66px 0;
     background-image: none;
   }
 
   .about__content {
-    display: flex;
     flex-direction: row;
     align-items: start;
-    padding-top: 54px;
+    padding-top: 50px;
   }
 
   .about__descriptions {
+    padding-top: 50px;
+    text-align: left;
     margin-left: 17px;
   }
 
   .about__description-upper {
     line-height: 1.79;
-    margin-bottom: 47px;
+    margin-bottom: 28px;
   }
 
   .about__description-lower {
@@ -100,31 +102,32 @@
 // -----------------1280-----------------
 @media screen and (min-width: 1280px) {
   .about {
+    padding: 125px 0 39px 0;
     background-image: url(../images/about/desktop/about_milk_desktop.png);
-    @include abouteSetup;
+    @include about_bg_properties;
 
-    background-position: center bottom;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       .about {
         background-image: url(../images/about/desktop/about_milk_desktop@2x.png);
-        @include abouteSetup;
+        @include about_bg_properties;
     }
   }
 
   .about__content {
-    padding-top: 60px;
+    padding-top: 55px;
   }
 
   .about__descriptions {
+    text-align: left;
     margin-left: 74px;
   }
 
     .about__description-upper {
     line-height: 1.75;
-    margin-bottom: 35px;
+    margin-bottom: 31px;
   }
 
   .about__description-lower {
