@@ -2,12 +2,11 @@
   padding: 80px 0 86px;
 }
 .sliders {
+  margin: 0 auto;
+  width: 280px;
   list-style: none;
 }
 .slider {
-  margin: 0 auto;
-  width: 280px;
-  border: 1px solid red;
   &__img {
     margin: 0 auto 29px;
     width: 85px;
@@ -27,14 +26,81 @@
   }
   &__text {
     position: relative;
+    z-index: 10;
+    &::before {
+      position: absolute;
+      top: -15px;
+      left: 4px;
+      content: '';
+      width: 54px;
+      height: 40px;
+      background-image: url('../images/icons/quote.svg');
+      z-index: -10;
+    }
     &::after {
       position: absolute;
       top: 28px;
       left: -7px;
       content: '';
       width: 180px;
-      height: 220px;
+      height: 219px;
       background-image: url('../images/icons/mobile_reviews_line.svg');
+    }
+  }
+  &__data {
+    position: relative;
+    margin-top: 52px;
+    text-align: center;
+    font-weight: $fontMedium;
+    font-size: $fontSizeSecondary;
+    line-height: 186%;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 32px;
+      height: 4px;
+      top: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url('../images/icons/reviews_dots.svg');
+    }
+  }
+}
+// Styling the default Slick dots
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-top: 30px;
+  list-style-type: none;
+
+  li {
+    margin: 0 9px;
+  }
+
+  button {
+    display: block;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: $colorPagination;
+    text-indent: -9999px;
+  }
+
+  li.slick-active button {
+    position: relative;
+    background-color: transparent;
+    &::after {
+      position: absolute;
+      top: 0px;
+      left: 0;
+      content: '';
+      width: 12.4px;
+      height: 11.84px;
+      background-image: url('../images/icons/home.svg');
     }
   }
 }
