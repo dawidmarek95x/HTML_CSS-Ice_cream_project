@@ -46,11 +46,42 @@
       <label class="application-form__field" for="e-mail">
         <span class="application-form__label">E-mail</span>
         <span class="application-form__input--wrapper">
-          <input class="application-form__input" type="email" name="email" id="e-mail" required />
+          <input 
+            class="application-form__input" 
+            type="email" 
+            name="email" 
+            id="e-mail" 
+            required />
           <svg class="application-form__icon">
             <use href="./images/icons/icons.svg#icon-email"></use>
           </svg>
         </span>
+      </label>
+
+      <label class="application-form__field" for="product">
+        <span class="application-form__label">Product</span>
+        <select 
+          class="application-form__select" 
+          id="product" 
+          name="productOrdered" 
+          required>
+          <option class="application-form__option" value="iceCream" selected>Ice Cream</option>
+          <option class="application-form__option" value="iceCoffe">Ice Coffe</option>
+          <option class="application-form__option" value="iceMilkshakes">Ice Milkshakes</option>
+        </select>
+      </label>
+
+      <label class="application-form__field" for="products-amount">
+        <span class="application-form__label">Amount (max 10)</span>
+          <input 
+            class="application-form__amount" 
+            type="number" 
+            name="productsAmount" 
+            id="products-amount" 
+            value="0" 
+            min="1" 
+            max="10" 
+            required />
       </label>
 
       <label class="application-form__field" for="user-message">

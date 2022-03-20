@@ -22,7 +22,7 @@
 
 .application-form__input {
   width: 100%;
-  height: 40px;
+  height: 35px;
   border: 1px solid #21212133;
   border-radius: 4px;
   padding-left: 42px;
@@ -48,6 +48,25 @@
   height: 18px;
   fill: #212121;
   transition: fill $mainTransition;
+}
+
+.application-form__select,
+.application-form__amount {
+  width: 100%;
+  height: 35px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #21212133;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+  line-height: 1.143;
+  background-color: transparent;
+  transition: border-color $mainTransition;
+
+  &:focus {
+    border-color: $mainColor;
+  }
 }
 
 .application-form__message {
