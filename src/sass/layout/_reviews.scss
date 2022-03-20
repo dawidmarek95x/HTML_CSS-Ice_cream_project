@@ -1,0 +1,102 @@
+.reviews {
+  padding: 80px 0 86px;
+}
+.sliders {
+  margin: 0 auto;
+  width: 280px;
+  list-style: none;
+}
+.slider {
+  &__img {
+    margin: 0 auto 29px;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+  }
+  &__opinion {
+    position: relative;
+    padding: 43px 66px 26px 57px;
+    background-color: $colorBg7;
+    font-weight: $fontMedium;
+    line-height: 2.583;
+    text-align: center;
+    color: $colorFont1;
+    &::before {
+      position: absolute;
+      top: 28px;
+      left: 61px;
+      content: '';
+      width: 54px;
+      height: 40px;
+      background-image: url('../images/icons/quote.svg');
+    }
+  }
+  &__text {
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 28px;
+      left: -7px;
+      content: '';
+      width: 180px;
+      height: 218px;
+      background-image: repeating-linear-gradient(transparent 1px, transparent 31px, $colorLine 32px);
+    }
+  }
+  &__data {
+    position: relative;
+    margin-top: 52px;
+    text-align: center;
+    font-weight: $fontMedium;
+    font-size: $fontSizeSecondary;
+    line-height: 1.857;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 32px;
+      height: 4px;
+      top: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url('../images/icons/reviews_dots.svg');
+    }
+  }
+}
+// Styling the default Slick dots
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-top: 30px;
+  list-style-type: none;
+
+  li {
+    margin: 0 9px;
+  }
+
+  button {
+    display: block;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: $colorPagination;
+    text-indent: -9999px;
+  }
+
+  li.slick-active button {
+    position: relative;
+    background-color: transparent;
+    &::after {
+      position: absolute;
+      top: 0px;
+      left: 0;
+      content: '';
+      width: 12.4px;
+      height: 11.84px;
+      background-image: url('../images/icons/home.svg');
+    }
+  }
+}
