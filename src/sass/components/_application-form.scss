@@ -29,14 +29,14 @@
   outline: none;
   font-size: 14px;
   line-height: 1.143;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color $mainTransition;
 
   &:focus {
-    border-color: #D41443;
+    border-color: $mainColor;
   }
 
   &:focus + .application-form__icon {
-    fill: #D41443;
+    fill: $mainColor;
   }
 }
 
@@ -47,7 +47,7 @@
   width: 18px;
   height: 18px;
   fill: #212121;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill $mainTransition;
 }
 
 .application-form__message {
@@ -61,14 +61,14 @@
   line-height: 1.143;
   resize: none;
   outline: none;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color $mainTransition;
 
   &::placeholder {
     color: #75757580;
   }
 
   &:focus {
-    border-color: #D41443;
+    border-color: $mainColor;
   }
 }
 
@@ -104,7 +104,7 @@
   left: 0;
   width: 16px;
   height: 15px;
-  background-color: #D41443;
+  background-color: $mainColor;
   border-radius: 2px;
   fill: #ffffff;
   cursor: pointer;
@@ -120,7 +120,7 @@
 }
 
 .application-form__link {
-  color: #D41443;
+  color: $mainColor;
 }
 
 .application-form__btn {
@@ -136,8 +136,8 @@
   line-height: 1.875;
   letter-spacing: 0.06em;
   text-align: center;
-  color: #ffffff;
-  background-color: #D41443;
+  color: $colorTheme1;
+  background-color: $mainColor;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
