@@ -2,7 +2,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center bottom;
-  background-color: $colorBg3;  
+  background-color: $colorBg3;
 }
 
 .about {
@@ -70,6 +70,7 @@
 .about__btn-ico {
   width: 4px;
   height: 8px;
+  stroke: $mainColor;
 }
 
 // -----------------768-----------------
@@ -110,7 +111,7 @@
     @include about_bg_properties;
 
   }
-  
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {

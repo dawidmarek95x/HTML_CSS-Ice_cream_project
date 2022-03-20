@@ -1,0 +1,252 @@
+.contacts {
+  height: 1502px;
+  margin-top: 80px;
+  padding-bottom: 113px;
+  position: relative;
+  background-color: $colorBg3;
+  &__btn {
+    background: $mainColor;
+    border-radius: $radiusBtnPrimary;
+    border: none;
+    height: 44px;
+    width: 161.45px;
+    position: absolute;
+    left: 50%;
+    bottom: 167px;
+    transform: translateX(-50%);
+    color: $colorTheme1;
+    font-weight: $fontBold;
+    font-size: $fontSizePrimary;
+    line-height: 1.31;
+    text-align: left;
+  }
+  &__franchise-btn {
+    background-color: $colorTheme1;
+    bottom: 113px;
+    &:hover,
+    &:focus {
+      background-color: $colorHoverPrimary;
+    }
+    &-text {
+      padding-left: 17px;
+      padding-right: 13.17px;
+      color: $mainColor;
+    }
+    &-ico {
+      width: 4px;
+      height: 8px;
+      stroke: $mainColor;
+    }
+  }
+  &__btn-text {
+    padding-left: 17px;
+    padding-right: 8px;
+  }
+  &__btn-ico {
+    width: 4px;
+    height: 8px;
+    stroke: $colorTheme1;
+  }
+}
+.address {
+  position: absolute;
+  left: 50%;
+  top: -84px;
+  width: 220px;
+  transform: translateX(-50%);
+  list-style-type: none;
+
+  &__item {
+    padding: 43px 21px 43px 20px;
+    margin-bottom: 20px;
+    background-color: $colorTheme1;
+    border-radius: $radiusPrimary;
+    box-shadow: $shadowContact;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__title {
+    border-radius: 4px;
+    font-weight: $fontMedium;
+    line-height: 1.83;
+    color: $colorTheme1;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    &--first {
+      background-color: $colorBg5;
+      margin: 0 91px 25px 0;
+    }
+    &--second {
+      background-color: $colorBg6;
+      margin: 0 49px 25px 0;
+    }
+  }
+  &__location {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $colorLine;
+  }
+  &__city {
+    margin-bottom: 10px;
+    font-weight: $fontMedium;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    color: $colorFont1;
+  }
+  &__description {
+    line-height: 1.5;
+    color: $colorFont2;
+  }
+  &__openly {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $colorLine;
+    font-weight: $fontMedium;
+    line-height: 1.83;
+  }
+  &__days {
+    color: $colorFont1;
+  }
+  &__hours {
+    color: $colorTheme2;
+  }
+  &__contacts {
+    font-weight: $fontMedium;
+    line-height: 1.5;
+  }
+  &__tel {
+    text-decoration: none;
+    color: $colorFont2;
+  }
+  &__mail {
+    text-decoration: none;
+    color: $colorFont2;
+  }
+}
+// -----------------768-----------------
+@media screen and (min-width: 768px) {
+  .contacts {
+    height: 756px;
+    margin-top: 197px;
+    padding-bottom: 165px;
+    &__btn {
+      width: 198px;
+      left: 196px;
+      bottom: 165px;
+      transform: translateX(0);
+    }
+    &__franchise-btn {
+      width: 198px;
+      left: 401.95px;
+      bottom: 165px;
+      &-text {
+        padding-left: 37.71px;
+        padding-right: 13.17px;
+      }
+      &-ico {
+        width: 4.26px;
+      }
+    }
+    &__btn-text {
+      padding-left: 30px;
+      padding-right: 13.4px;
+    }
+    &__btn-ico {
+      width: 4.26px;
+    }
+  }
+  .address {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: -78px;
+    width: 700px;
+    &__item {
+      width: 220px;
+      padding: 50px 32px 50px 31px;
+      margin-bottom: 0;
+    }
+    &__title {
+
+      &--first {
+        margin: 0 84px 30px 0;
+      }
+      &--second {
+        margin: 0 19px 30px 0;
+      }
+    }
+    &__location {
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+    }
+    &__city {
+      margin-bottom: 14px;
+    }
+    &__openly {
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+    }
+    &__contacts {
+      line-height: 1.86;
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contacts {
+    height: 765px;
+    margin-top: 234px;
+    &__btn {
+      left: 443px;
+    }
+    &__franchise-btn {
+      width: 180px;
+      left: 656px;
+      &-text {
+        padding-left: 39px;
+        padding-right: 13.62px;
+      }
+      &-ico {
+        width: 4.43px;
+      }
+    }
+    &__btn-text {
+      padding-left: 35px;
+      padding-right: 13.62px;
+    }
+    &__btn-ico {
+      width: 4.43px;
+    }
+  }
+  .address {
+    top: -102px;
+    width: 1050px;
+    &__item {
+      width: 330px;
+      padding: 51px 53px 62px 43px;
+    }
+    &__title {
+      &--first {
+        margin: 0 161px 32px 0;
+      }
+      &--second {
+        margin: 0 96px 32px 0;
+      }
+    }
+    &__location {
+      margin-bottom: 32px;
+      padding-bottom: 32px;
+    }
+    &__city {
+      margin-bottom: 10px;
+    }
+    &__openly {
+      margin-bottom: 32px;
+      padding-bottom: 32px;
+    }
+    &__contacts {
+      line-height: 1.86;
+    }
+  }
+}
