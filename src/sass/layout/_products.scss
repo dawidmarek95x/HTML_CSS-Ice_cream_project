@@ -1,0 +1,110 @@
+.products {
+  padding: 121px 0 98px;
+}
+
+.product {
+  &__cards {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__card {
+    position: relative;
+    margin-bottom: 130px;
+    padding: 161px 39px 41px 41px;
+    border-radius: $radiusPrimary;
+    color: $colorFont3;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    &:first-child {
+      margin-top: 144px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: -113px;
+      transform: translateX(-50%);
+      width: 249px;
+      height: 252px;
+    }
+
+    &:hover::before {
+      animation: fadeIn 800ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &--first {
+      background-color: $colorBg1;
+      &::before {
+        background-image: url('../images/products/ice_cream_mobile.png');
+      }
+    }
+
+    &--second {
+      background-color: $colorBg5;
+      &::before {
+        background-image: url('../images/products/coffe_mobile.png');
+      }
+    }
+
+    &--third {
+      background-color: $colorBg6;
+      &::before {
+        background-image: url('../images/products/milkshake_mobile.png');
+      }
+    }
+  }
+
+  &__title {
+    position: relative;
+    font-family: $secondaryFont;
+    font-size: $fontSizeProductHeader;
+    font-weight: normal;
+    line-height: 1.15;
+    text-transform: uppercase;
+
+    &::after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 53px;
+      transform: translateX(-50%);
+      width: 26px;
+      height: 6px;
+      background-image: url('../images/icons/product_dots.svg');
+    }
+  }
+
+  &__text {
+    margin: 66px 0 30px;
+    font-weight: $fontBold;
+    font-size: $fontSizeSecondary;
+    line-height: 152%;
+  }
+
+  &__description {
+    position: absolute;
+    
+    &--is-hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: scale(1.1);
+    }
+  }
+
+  &__btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: url('../images/products/arrow_right.jpg');
+    cursor: pointer;
+  }
+}

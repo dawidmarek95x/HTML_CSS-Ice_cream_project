@@ -4,6 +4,9 @@
 // ZMIENNE
 @import './utils/variables';
 
+// ANIMACJE
+@import './utils/animations';
+
 // USTAWIENIA BAZOWE
 @import './base/common';
 @import './base/container';
@@ -14,22 +17,25 @@
 @import './components/modal';
 @import './components/application-form';
 @import './components/slider';
+@import './components/social-media';
 
 // KOMPONENTY LAYOUT'U
 // KOMPONENTY SEKCJI HEADER
 @import "./layout/header";
 
-// KOMPONENTY SEKCJI PRODUCTS
+// KOMPONENTY SEKCJI HERO
 
+// KOMPONENTY SEKCJI PRODUCTS
+@import "./layout/products";
 
 // KOMPONENTY SEKCJI ABOUT
-
+@import './layout/about';
 
 // KOMPONENTY SEKCJI ADVANTAGES
-
+@import './layout/advantages';
 
 // KOMPONENTY SEKCJI GALLERY
-
+@import './layout/gallery';
 
 // KOMPONENTY SEKCJI REVIEWS
 @import "./layout/_reviews";
@@ -38,3 +44,4 @@
 
 
 // KOMPONENTY SEKCJI FOOTER
+@import './layout/footer';
