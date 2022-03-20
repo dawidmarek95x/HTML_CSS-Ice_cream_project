@@ -10,6 +10,7 @@
   background-image: url(../images/about/about_milk.png);
   @include about_bg_properties;
 }
+
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -109,6 +110,7 @@
     @include about_bg_properties;
 
   }
+  
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
