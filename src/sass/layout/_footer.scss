@@ -1,0 +1,54 @@
+.footer-section {
+  background-color: #fff5f6;
+}
+
+.footer{
+  margin-bottom: 43px;
+
+  .social-media {
+    margin-left: auto;
+    margin-bottom: 46px;
+  }
+}
+
+.footer__title--container {
+  max-width: 234px;
+  margin-bottom: 43px;
+}
+
+.footer__superscription {
+  margin-bottom: 17px;
+  text-align: left;
+}
+
+.footer__title {
+  text-align: left; 
+}
+
+.footer__address {
+  font-style: normal;
+  font-weight: $fontBold;
+  line-height: 1.222;
+  text-align: right;
+}
+
+.footer__tel-link {
+  color: $mainColor;
+  text-decoration-line: none;
+}
+
+.footer__copyright--container {
+  border-top: 1px solid #E1E1E1;
+  padding: 22px 0 25px 0;
+
+}
+
+.footer__copyright {
+  max-width: 149px;
+  margin: 0 auto;
+  font-weight: $fontBold;
+  font-size: $fontSizeSecondary;
+  line-height: 1.5;
+  text-align: center;
+  color: $colorFont2;
+}
