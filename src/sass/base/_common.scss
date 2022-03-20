@@ -30,6 +30,10 @@ img {
   display: block;
 }
 
+button {
+  cursor: $cursor;
+}
+
 @media screen and (min-width: 768px) {
   body {
     font-size: $fontSizeSecondary;

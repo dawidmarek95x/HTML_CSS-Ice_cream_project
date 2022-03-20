@@ -1,13 +1,4 @@
-//  Mobile styling
-
-// Not displayed elements in mobile view
-.hero__image--milk,
-.hero__description,
-.hero__spots,
-.hero__image--girl {
-  display: none;
-}
-
+// 480px Mobile styling
 .hero {
   .container {
     display: flex;
@@ -43,14 +34,14 @@
   }
   &__buttons {
     display: flex;
-
     margin: 8px;
     gap: 8px;
+    font-size: 8px;
   }
   &__button {
     &--left,
     &--right {
-      font-size: 8px;
+      font-size: inherit;
       height: 20px;
       padding: 8px 12px;
       border-radius: 20px;
@@ -77,9 +68,161 @@
       }
     }
   }
-  //   &__image--icecream {
-  //       position:absolute;
-  //       z-index:-1;
-  //       top: 0;left: 0;
-  //   }
+}
+
+// Not displayed elements in mobile view
+@media screen and (max-width: 767px) {
+  .hero__image--milk,
+  .hero__description,
+  .hero__spots,
+  .hero__image--girl {
+    display: none;
+  }
+}
+
+// 768px Tablet styling
+
+@media screen and (min-width: 768px) {
+  .hero {
+    .container {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      padding: 10px 30px 0 30px;
+      background-size: 17%, 40%;
+      background-position: 60% 100%, 70% 50%;
+    }
+
+    &__flex-left,
+    &__flex-right {
+      display: flex;
+      flex-direction: column;
+      width: 50vw;
+    }
+    &__flex-right {
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+    &__flex-left-inner {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__description {
+      display: flex;
+      flex-direction: column;
+      width: 115px;
+      bottom: 30px;
+      left: 220px;
+      color: $colorFont3;
+      font-size: 8px;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 0.04em;
+    }
+    &__arrow-button {
+      margin-top: 10px;
+      width: 18px;
+      height: 18px;
+      border: 0;
+      background: url(../images/products/arrow-right.png);
+      background-size: 100%;
+    }
+
+    &__image {
+      &--milk {
+        width: 150px;
+        height: auto;
+      }
+    }
+
+    &__spot {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin: 10px 0;
+    }
+    &__counter {
+      color: $colorFont3;
+      font-weight: 400;
+      font-size: 8px;
+      &--bigger {
+        z-index: 1;
+        position: relative;
+        font-family: $secondaryFont;
+        color: $mainColor;
+        font-size: 28px;
+        &::before {
+          z-index: -1;
+          position: absolute;
+          content: url(../images/icon/circle.svg);
+          filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%)
+            contrast(100%);
+          top: -12px;
+          right: -7px;
+        }
+      }
+    }
+    &__image--girl {
+      height: auto;
+      width: 175px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    .container {
+      padding: 20px 50px 0 50px;
+      height: 600px;
+    }
+    &__header {
+      width: 280px;
+      font-size: 38px;
+      line-height: 44px;
+      letter-spacing: 0.04em;
+      &--bigger {
+        font-size: 58px;
+        line-height: 52px;
+      }
+    }
+    &__buttons {
+      flex-grow: 2;
+      gap: 20px;
+      font-size: 14px;
+    }
+    &__flex-left-inner {
+      padding-bottom: 40px;
+    }
+    &__image--milk {
+      width: 200px;
+    }
+    &__paragraph {
+      width: 200px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &__arrow-button {
+      width: 30px;
+      height: 30px;
+    }
+    &__counter {
+      font-size: 14px;
+      &--bigger {
+        font-size: 48px;
+        margin-bottom: 8px;
+        &::before {
+          content: url(../images/icon/circle-big.svg);
+          filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%)
+            contrast(100%);
+          top: -20px;
+          right: -15px;
+        }
+      }
+    }
+    &__image--girl {
+      width: 300px;
+    }
+  }
 }
