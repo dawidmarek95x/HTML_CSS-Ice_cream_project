@@ -40,7 +40,11 @@
       content: '';
       width: 180px;
       height: 218px;
-      background-image: repeating-linear-gradient(transparent 1px, transparent 31px, $colorLine 32px);
+      background-image: repeating-linear-gradient(
+        transparent 1px,
+        transparent 31px,
+        $colorLine 32px
+      );
     }
   }
   &__data {
@@ -97,6 +101,91 @@
       width: 12.4px;
       height: 11.84px;
       background-image: url('../images/icons/home.svg');
+    }
+  }
+}
+// -----------------768-----------------
+@media screen and (min-width: 768px) {
+  .reviews {
+    padding: 121px 0 197px;
+  }
+  .sliders {
+    margin: 0 auto;
+    width: 620px;
+  }
+  .slider {
+    &__img {
+      margin: 0 auto 19px;
+    }
+    &__opinion {
+      padding: 47px 80px 34px;
+      background-color: rgba(250, 250, 250, 0.4);
+      line-height: 2.143;
+      font-size: $fontSizeSecondary;
+      &::before {
+        top: 30px;
+        left: 40px;
+      }
+    }
+    &__text {
+      letter-spacing: 0.04em;
+      &::before {
+        top: 29px;
+        left: -20px;
+        width: 524px;
+        height: 61px;
+        background-image: repeating-linear-gradient(
+          transparent 1px,
+          transparent 30px,
+          $colorLine 31px
+        );
+      }
+    }
+    &__data {
+      margin-top: 42px;
+      font-size: $fontSizePrimary;
+      line-height: 1.875;
+    }
+  }
+  .slick-dots {
+    padding-top: 35px;
+  }
+}
+// -----------------1280-----------------
+@media screen and (min-width: 1280px) {
+  .reviews {
+    padding: 123px 0 234px;
+  }
+  .sliders {
+    width: 926px;
+  }
+  .slider {
+    &__img {
+      margin: 0 auto 15px;
+    }
+    &__opinion {
+      padding: 47px 89px 39px 87px;
+      background-color: rgba(250, 250, 250);
+      font-size: $fontSizePrimary;
+      &::before {
+        top: 32px;
+        left: 50px;
+      }
+    }
+    &__text {
+      line-height: 1.875;
+      letter-spacing: 0.04em;
+      &::before {
+        top: 28.5px;
+        left: -28px;
+        width: 813px;
+        height: 30.5px;
+      }
+    }
+    &__data {
+      margin-top: 34px;
+      font-size: $fontSizeProductHeader;
+      line-height: 1.85;
     }
   }
 }
