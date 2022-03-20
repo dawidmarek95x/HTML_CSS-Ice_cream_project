@@ -16,6 +16,8 @@
 @import './components/secondary-title';
 @import './components/modal';
 @import './components/application-form';
+@import './components/slider';
+@import './components/social-media';
 
 // KOMPONENTY LAYOUT'U
 // KOMPONENTY SEKCJI HEADER
@@ -30,15 +32,16 @@
 @import './layout/about';
 
 // KOMPONENTY SEKCJI ADVANTAGES
-
+@import './layout/advantages';
 
 // KOMPONENTY SEKCJI GALLERY
 @import './layout/gallery';
 
 // KOMPONENTY SEKCJI REVIEWS
-
+@import "./layout/_reviews";
 
 // KOMPONENTY SEKCJI CONTACTS
 
 
 // KOMPONENTY SEKCJI FOOTER
+@import './layout/footer';
