@@ -14,34 +14,33 @@
     border-radius: 50%;
   }
   &__opinion {
+    position: relative;
     padding: 43px 66px 26px 57px;
     background-color: $colorBg7;
     font-weight: $fontMedium;
     line-height: 2.583;
     text-align: center;
     color: $colorFont1;
-  }
-  &__text {
-    position: relative;
-    z-index: 10;
     &::before {
       position: absolute;
-      top: -15px;
-      left: 4px;
+      top: 28px;
+      left: 61px;
       content: '';
       width: 54px;
       height: 40px;
       background-image: url('../images/icons/quote.svg');
-      z-index: -10;
     }
-    &::after {
+  }
+  &__text {
+    position: relative;
+    &::before {
       position: absolute;
       top: 28px;
       left: -7px;
       content: '';
       width: 180px;
-      height: 219px;
-      background-image: url('../images/icons/mobile_reviews_line.svg');
+      height: 218px;
+      background-image: repeating-linear-gradient(transparent 1px, transparent 31px, $colorLine 32px);
     }
   }
   &__data {
