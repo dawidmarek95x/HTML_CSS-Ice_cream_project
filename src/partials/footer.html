@@ -1,21 +1,4 @@
 <footer class="footer-section">
-  <!-- Style dodane jako przykład i propozycja implementacji bez dodawania bloków HTML bez znaczenia semantycznego -->
-  <!-- <style>
-    .social-media__link {
-      display: block;
-      width: 20px;
-      height: 20px;
-    }
-    .link--github::after {
-      content: url(./images/icons/github.svg);
-    }
-    .link--telegram::after {
-      content: url(./images/icons/telegram.svg);
-    }
-    .link--facebook::after {
-      content: url(./images/icons/facebook.svg);
-    }
-  </style> -->
   <div class="container footer">
     <div class="footer__title--container">
       <p class="secondary-label footer__superscription">
@@ -23,21 +6,39 @@
       </p>
       <p class="secondary-title footer__title">with passion</p>
     </div>
-    <ul class="social-media">
-      <li class="social-media__item">
-        <a href="" target="_blank" class="social-media__link link--github"></a>
-      </li>
-      <li class="social-media__item">
-        <a href="" target="_blank" class="social-media__link link--telegram"></a>
-      </li>
-      <li class="social-media__item">
-        <a href="" target="_blank" class="social-media__link link--facebook"></a>
-      </li>
-    </ul>
-    <p class="footer__tel">
-      Feel free to contact
-      <a href="tel:+610383766284" class="link footer__tel--link">+61 (0) 383 766 284</a>
-    </p>
+    <div class="footer__contacts">
+      <ul class="social-media">
+        <li class="social-media__item">
+          <a href="https://github.com/" target="_blank" class="social-media__link link--github">
+            <svg class="social-media__icon icon--github">
+              <use href="./images/icons/icons.svg#icon-github"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media__item">
+          <a href="https://telegram.org/" target="_blank" class="social-media__link link--telegram">
+            <svg class="social-media__icon icon--telegram">
+              <use href="./images/icons/icons.svg#icon-telegram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media__item">
+          <a href="https://www.facebook.com/" target="_blank" class="social-media__link link--facebook">
+            <svg class="social-media__icon icon--facebook">
+              <use href="./images/icons/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <address class="footer__address">
+        <p class="footer__tel-label">
+          Feel free to contact
+          <a href="tel:+610383766284" class="footer__tel-link link">+61 (0) 383 766 284</a>
+        </p>
+      </address>
+    </div>
+  </div>
+  <div class="footer__copyright--container">
     <p class="footer__copyright">&copy; 2019 - IceCream. All Rights Reserved.</p>
   </div>
 </footer>
