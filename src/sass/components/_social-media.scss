@@ -39,3 +39,34 @@
   width: 9px;
   height: 19px;
 }
+
+@media screen and (min-width: 768px) {
+  .social-media {
+    width: 162px;
+  }
+  
+  .social-media__link {
+    width: 34px;
+    height: 34px;
+  }
+  
+  .icon--github {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .icon--telegram {
+    width: 20px;
+    height: 16px;
+  }
+  
+  .icon--facebook {
+    height: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .social-media {
+    width: 151px;
+  }
+}
