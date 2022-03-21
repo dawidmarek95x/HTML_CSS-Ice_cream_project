@@ -1,20 +1,74 @@
-.hero .container{
-    background-color: #FFB8CA;
-}
 .hero {
+    background-color: $colorBg1;
+    background-image:  url(./../images/hero/hero-icecream.png), url(./../images/icons/hero_circle.svg) ;
+    background-position: 117px 92px, 36px 83px ;
+    background-repeat: no-repeat, no-repeat ;
+    background-size: contain, cover;
+    padding-top: 193px;
+    padding-bottom: 160px;
+
+
+    position: relative;
     &__image--milk,
     &__description,
     &__spots,
     &__image--girl {
         display: none;
     }
-    &__image--icecream{
-        width: 171px;
-        height: 410px;
-        // position: absolute;
-        // left: 117px;
-        // top: 92px;
-        // z-index: 5;
+    &__header{
+        font-family: $secondaryFont;
+        color: $colorFont3;
+        font-size: $fontSizeLabelTablet;
+        text-transform: uppercase;
+        &-span {
+            color:$mainColor;
+            font-size: $fontSizeHeaderTablet;
+        }
+        &-wraperr {
+            display: block;
+            width: 60%;
+        }
+
+    }
+    &__buttons {
+        list-style: none;
+        margin-top: 19px;
+        display: flex;
+    }
+    &__btn {
+        display: block;
+        height: 100%;
+        
+        & a{
+        text-decoration: none;
+         font-family: $mainFont;
+            font-size: 8px ;
+            padding: 8px 15px;
+        }
+        
+        &--left{
+            background: $mainColor;
+            border-radius: $radiusBtnSecondary;
+           color: $colorFont3;
+        }
+        &--right {
+            background: #fff;
+            border-radius: $radiusBtnSecondary;
+            margin-left: 8px;
+            color: $mainColor;
+        }
     }
 
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .hero {
+         &__image--milk,
+    &__description,
+    &__spots,
+    &__image--girl {
+        display: block;
+    }
+    }
+    
 }
