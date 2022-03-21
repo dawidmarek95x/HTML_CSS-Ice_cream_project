@@ -30,7 +30,7 @@
       background-color: $colorHoverPrimary;
     }
     &-text {
-      margin-right: 11px;
+      margin-right: 13.17px;
       color: $mainColor;
     }
     &-ico {
@@ -40,10 +40,10 @@
     }
   }
   &__btn-text {
-    margin-right: 8px;
+    margin-right: 11px;
   }
   &__btn-ico {
-    width: 4px;
+    width: 3.61px;
     height: 8px;
     stroke: $colorTheme1;
   }
@@ -140,18 +140,12 @@
       margin-left: 14.5px;
       width: 174px;
       margin-top: 0;
-      &-text {
-        margin-right: 13.17px;
-      }
-      &-ico {
-        width: 4.26px;
-      }
     }
     &__btn-text {
       margin-right: 13.4px;
     }
     &__btn-ico {
-      width: 4.26px;
+      width: 4.28px;
     }
   }
   .address {
