@@ -546,8 +546,6 @@ img {
 }
 .hero {
   background-color: #ffb8ca;
-  padding-top: 193px;
-  padding-bottom: 160px;
   height: 502px;
   position: relative;
 }
@@ -558,6 +556,7 @@ img {
   font-family: "Titan One", cursive;
   color: #ffffff;
   font-size: 26px;
+  letter-spacing: 0, 4em;
   text-transform: uppercase;
   position: absolute;
   left: 20px;
@@ -596,11 +595,17 @@ img {
   border-radius: 20px;
   color: #ffffff;
 }
+.hero__btn--left:hover, .hero__btn--left:focus {
+  background: #c7133e;
+}
 .hero__btn--right {
   background: #fff;
   border-radius: 20px;
   margin-left: 8px;
   color: #d41443;
+}
+.hero__btn--right:hover, .hero__btn--right:focus {
+  background: #ecebeb;
 }
 .hero__image--circle {
   position: absolute;
@@ -622,8 +627,6 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .hero {
     height: 399px;
-    padding-top: 102px;
-    padding-bottom: 173px;
     position: relative;
   }
   .hero__header {
@@ -676,6 +679,8 @@ img {
     top: 31px;
     left: 307px;
     z-index: 1;
+    width: 324px;
+    height: 322px;
     background-color: transparent;
   }
   .hero__image--icecream {
@@ -712,6 +717,8 @@ img {
     width: 18px;
     height: 18px;
     border-radius: 50%;
+    margin-top: 7px;
+    border: none;
   }
   .hero__spots {
     display: flex;
@@ -723,10 +730,11 @@ img {
     top: 96px;
   }
   .hero__spot {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    width: 43px;
     text-align: end;
     margin-bottom: 13px;
+    position: relative;
   }
   .hero__counter {
     font-size: 8px;
@@ -736,6 +744,115 @@ img {
     font-family: "Titan One", cursive;
     font-size: 28px;
     color: #d41443;
+  }
+  .hero__counter--circle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    height: 665px;
+    position: relative;
+  }
+  .hero__header {
+    font-size: 38px;
+    position: absolute;
+    left: 115px;
+    top: 171px;
+    z-index: 3;
+  }
+  .hero__header-span {
+    font-size: 58px;
+  }
+  .hero__buttons {
+    position: absolute;
+    left: 115px;
+    top: 333px;
+  }
+  .hero__btn a {
+    font-size: 14px;
+    padding: 13px 20px;
+  }
+  .hero__btn--right {
+    margin-left: 17px;
+  }
+  .hero__image--circle {
+    position: absolute;
+    top: 52px;
+    left: 475px;
+    width: 538px;
+    height: 538px;
+  }
+  .hero__image--icecream {
+    position: absolute;
+    left: 594px;
+    top: 108px;
+    width: 236px;
+    height: 557px;
+  }
+  .hero__image--milk {
+    display: block;
+    position: absolute;
+    left: 77px;
+    top: 429px;
+    width: 185px;
+    height: 191px;
+  }
+  .hero__description {
+    display: block;
+    width: 200px;
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    left: 295px;
+    top: 485px;
+  }
+  .hero__arrow-btn {
+    background-image: url(./../images/hero/hero-arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 26px 26px;
+    width: 26px;
+    height: 26px;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: none;
+  }
+  .hero__spots {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    list-style: none;
+    position: absolute;
+    left: 1111px;
+    top: 160px;
+  }
+  .hero__spot {
+    display: block;
+    width: 76px;
+    text-align: end;
+    margin-bottom: 18px;
+    position: relative;
+  }
+  .hero__counter {
+    font-size: 14px;
+    color: #fff;
+  }
+  .hero__counter--bigger {
+    font-family: "Titan One", cursive;
+    font-size: 46px;
+    color: #d41443;
+  }
+  .hero__counter--circle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
   }
 }
 .products {
