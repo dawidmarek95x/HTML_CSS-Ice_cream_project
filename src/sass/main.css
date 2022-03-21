@@ -548,9 +548,10 @@ img {
   background-color: #ffb8ca;
   padding-top: 193px;
   padding-bottom: 160px;
+  height: 502px;
   position: relative;
 }
-.hero__image--milk, .hero__description, .hero__spots, .hero__image--icecream, .hero__image--girl {
+.hero__image--girl, .hero__image--milk, .hero__spots, .hero__description {
   display: none;
 }
 .hero__header {
@@ -558,6 +559,10 @@ img {
   color: #ffffff;
   font-size: 26px;
   text-transform: uppercase;
+  position: absolute;
+  left: 20px;
+  top: 193px;
+  z-index: 3;
 }
 .hero__header-span {
   color: #d41443;
@@ -571,6 +576,10 @@ img {
   list-style: none;
   margin-top: 19px;
   display: flex;
+  position: absolute;
+  left: 20px;
+  top: 318px;
+  z-index: 3;
 }
 .hero__btn {
   display: block;
@@ -593,38 +602,131 @@ img {
   margin-left: 8px;
   color: #d41443;
 }
+.hero__image--circle {
+  position: absolute;
+  top: 83px;
+  left: 36px;
+  z-index: 1;
+  background-color: transparent;
+}
+.hero__image--icecream {
+  position: absolute;
+  left: 117px;
+  top: 92px;
+  width: 171px;
+  height: 410px;
+  z-index: 2;
+  background-color: transparent;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .hero {
-    background-image: url(./../images/icons/hero_circle.svg);
-    background-position: 307px 31px;
-    background-repeat: no-repeat;
-    background-size: 324px 322px;
+    height: 399px;
     padding-top: 102px;
     padding-bottom: 173px;
+    position: relative;
+  }
+  .hero__header {
+    font-family: "Titan One", cursive;
+    color: #ffffff;
+    font-size: 22px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 34px;
+    top: 102px;
+    z-index: 3;
+  }
+  .hero__header-span {
+    color: #d41443;
+    font-size: 34px;
+  }
+  .hero__header-wraperr {
+    display: block;
+    width: 60%;
+  }
+  .hero__buttons {
+    position: absolute;
+    left: 34px;
+    top: 202px;
+  }
+  .hero__btn {
+    display: block;
+    height: 100%;
+    border: none;
+  }
+  .hero__btn a {
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: 8px;
+    padding: 8px 15px;
+  }
+  .hero__btn--left {
+    background: #d41443;
+    border-radius: 20px;
+    color: #ffffff;
+  }
+  .hero__btn--right {
+    background: #fff;
+    border-radius: 20px;
+    margin-left: 8px;
+    color: #d41443;
+  }
+  .hero__image--circle {
+    position: absolute;
+    top: 31px;
+    left: 307px;
+    z-index: 1;
+    background-color: transparent;
+  }
+  .hero__image--icecream {
+    position: absolute;
+    left: 378px;
+    top: 63px;
+    width: 143px;
+    height: 336px;
+    z-index: 2;
+    background-color: transparent;
+  }
+  .hero__image--milk {
+    display: block;
+    position: absolute;
+    left: 34px;
+    top: 245px;
+    width: 124px;
+    height: 126px;
   }
   .hero__description {
     display: block;
-    color: #fff;
     width: 114px;
+    font-size: 8px;
+    color: #fff;
     position: absolute;
     left: 154px;
     top: 292px;
   }
-  .hero__paragraph {
-    font-size: 8px;
-    line-height: 1.5;
+  .hero__arrow-btn {
+    background-image: url(./../images/hero/hero-arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px 18px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
   }
   .hero__spots {
-    display: block;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
     list-style: none;
-    left: 690px;
-    top: 94px;
+    position: absolute;
+    left: 691px;
+    top: 96px;
   }
   .hero__spot {
     display: flex;
     flex-direction: column;
+    text-align: end;
+    margin-bottom: 13px;
   }
   .hero__counter {
     font-size: 8px;
@@ -632,45 +734,8 @@ img {
   }
   .hero__counter--bigger {
     font-family: "Titan One", cursive;
-    color: #d41443;
     font-size: 28px;
-  }
-  .hero__header {
-    font-size: 22px;
-  }
-  .hero__header-span {
-    font-size: 34px;
-  }
-  .hero__header-wraperr {
-    display: block;
-    width: 20%;
-  }
-  .hero__buttons {
-    margin-top: 20px;
-  }
-  .hero__image--girl {
-    display: block;
-    width: 168px;
-    height: 133px;
-    position: absolute;
-    top: 266px;
-    left: 566px;
-  }
-  .hero__image--icecream {
-    display: block;
-    width: 143px;
-    height: 336px;
-    position: absolute;
-    left: 378px;
-    top: 63px;
-  }
-  .hero__image--milk {
-    display: block;
-    width: 124px;
-    height: 126px;
-    position: absolute;
-    left: 34px;
-    top: 245px;
+    color: #d41443;
   }
 }
 .products {

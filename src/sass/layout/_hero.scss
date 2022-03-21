@@ -1,18 +1,13 @@
 .hero {
   background-color: $colorBg1;
-  // background-image: url(./../images/icons/hero_circle.svg);
-  // background-position:  36px 83px;
-  // background-repeat:  no-repeat;
-  // background-size:  cover;
   padding-top: 193px;
   padding-bottom: 160px;
-
+  height: 502px;
   position: relative;
+  &__image--girl,
   &__image--milk,
-  &__description,
   &__spots,
-  &__image--icecream,
-  &__image--girl {
+  &__description {
     display: none;
   }
   &__header {
@@ -20,6 +15,10 @@
     color: $colorFont3;
     font-size: $fontSizeLabelTablet;
     text-transform: uppercase;
+    position: absolute;
+    left: 20px;
+    top: 193px;
+    z-index: 3;
     &-span {
       color: $mainColor;
       font-size: $fontSizeHeaderTablet;
@@ -33,6 +32,10 @@
     list-style: none;
     margin-top: 19px;
     display: flex;
+    position: absolute;
+    left: 20px;
+    top: 318px;
+    z-index: 3;
   }
   &__btn {
     display: block;
@@ -56,91 +59,150 @@
       margin-left: 8px;
       color: $mainColor;
     }
+    
   }
+  &__image--circle {
+      position: absolute;
+      top: 83px;
+      left: 36px;
+      z-index: 1;
+      background-color: transparent;
+    }
+    &__image--icecream {
+      position: absolute;
+      left: 117px;
+      top: 92px;
+      width: 171px;
+      height: 410px;
+      z-index: 2;
+      background-color: transparent;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .hero {
-    background-image: url(./../images/icons/hero_circle.svg);
-    background-position: 307px 31px;
-    background-repeat: no-repeat;
-    background-size: 324px 322px;
+    height: 399px;
     padding-top: 102px;
     padding-bottom: 173px;
+  position: relative;
+  &__header {
+    font-family: $secondaryFont;
+    color: $colorFont3;
+    font-size: 22px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 34px;
+    top: 102px;
+    z-index: 3;
+    &-span {
+      color: $mainColor;
+      font-size: $fontSizeHeaderMobile;
+    }
+    &-wraperr {
+      display: block;
+      width: 60%;
+    }
+  }
+  &__buttons {
+    
+    position: absolute;
+    left: 34px;
+    top: 202px;
+  }
+  &__btn {
+    display: block;
+    height: 100%;
+    border: none;
 
+    & a {
+      text-decoration: none;
+      font-family: $mainFont;
+      font-size: 8px;
+      padding: 8px 15px;
+    }
+
+    &--left {
+      background: $mainColor;
+      border-radius: $radiusBtnSecondary;
+      color: $colorFont3;
+    }
+    &--right {
+      background: #fff;
+      border-radius: $radiusBtnSecondary;
+      margin-left: 8px;
+      color: $mainColor;
+    }
+    
+  }
+  &__image--circle {
+      position: absolute;
+      top: 31px;
+      left: 307px;
+      z-index: 1;
+      background-color: transparent;
+    }
+    &__image--icecream {
+      position: absolute;
+      left: 378px;
+      top: 63px;
+      width: 143px;
+      height: 336px;
+      z-index: 2;
+      background-color: transparent;
+    }
+    &__image--milk {
+      display: block;
+      position: absolute;
+      left: 34px;
+      top: 245px;
+      width: 124px;
+      height: 126px;
+    }
     &__description {
       display: block;
-      color: #fff;
       width: 114px;
+      font-size: 8px;
+      color: #fff;
       position: absolute;
       left: 154px;
       top: 292px;
     }
-    &__paragraph {
-      font-size: 8px;
-      line-height: 1.5;
+    &__arrow-btn {
+      background-image: url(./../images/hero/hero-arrow.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 18px 18px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+
     }
     &__spots {
-      display: block;
-      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-content: flex-end;
       list-style: none;
-      left: 690px;
-      top: 94px;
+      position: absolute;
+      left: 691px;
+      top: 96px;
     }
     &__spot {
       display: flex;
       flex-direction: column;
-    }
+      text-align: end;
+      margin-bottom: 13px;
 
-    &__counter {
+    }
+    &__counter{
       font-size: 8px;
       color: #fff;
       &--bigger {
         font-family: $secondaryFont;
-        color: $mainColor;
         font-size: 28px;
+        color: $mainColor;
       }
     }
-    &__header {
-      font-size: 22px;
-      &-span {
-        font-size: $fontSizeHeaderMobile;
-      }
-      &-wraperr {
-        display: block;
-        width: 20%;
-      }
-    }
-    &__buttons {
-      margin-top: 20px;
-    }
-    &__image {
-      &--girl {
-        display: block;
-        width: 168px;
-        height: 133px;
-        position: absolute;
-        top: 266px;
-        left: 566px;
-      }
-      &--icecream {
-        display: block;
-        width: 143px;
-        height: 336px;
-        position: absolute;
-        left: 378px;
-        top:63px;
-      }
-      &--milk {
-        display: block;
-        width: 124px;
-        height: 126px;
-        position: absolute;
-        left: 34px;
-        top: 245px;
 
-
-      }
-    }
-  }
 }
+}
+  
