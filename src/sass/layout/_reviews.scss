@@ -107,7 +107,7 @@
 // -----------------768-----------------
 @media screen and (min-width: 768px) {
   .reviews {
-    padding: 121px 0 197px;
+    padding: 121px 0 119px;
   }
   .sliders {
     margin: 0 auto;
@@ -119,15 +119,14 @@
     }
     &__opinion {
       padding: 47px 80px 34px;
-      background-color: rgba(250, 250, 250, 0.4);
-      line-height: 2.143;
-      font-size: $fontSizeSecondary;
+      background-color: #fafafa66;
       &::before {
         top: 30px;
         left: 40px;
       }
     }
     &__text {
+      line-height: 2.143;
       letter-spacing: 0.04em;
       &::before {
         top: 29px;
@@ -154,7 +153,7 @@
 // -----------------1280-----------------
 @media screen and (min-width: 1280px) {
   .reviews {
-    padding: 123px 0 234px;
+    padding: 123px 0 132px;
   }
   .sliders {
     width: 926px;
@@ -165,8 +164,7 @@
     }
     &__opinion {
       padding: 47px 89px 39px 87px;
-      background-color: rgba(250, 250, 250);
-      font-size: $fontSizePrimary;
+      background-color: #fafafa;
       &::before {
         top: 32px;
         left: 50px;
@@ -174,7 +172,6 @@
     }
     &__text {
       line-height: 1.875;
-      letter-spacing: 0.04em;
       &::before {
         top: 28.5px;
         left: -28px;
