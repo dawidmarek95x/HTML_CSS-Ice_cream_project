@@ -2,7 +2,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center bottom;
-  background-color: $colorBg3;  
+  background-color: $colorBg3;
 }
 
 .about {
@@ -45,6 +45,9 @@
   color: $colorFont2;
   margin-bottom: 17px;
   white-space: pre-line;
+}
+.about__description-more--is-hidden{
+  display: none;
 }
 
 .about__btn {
@@ -110,7 +113,7 @@
     @include about_bg_properties;
 
   }
-  
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
