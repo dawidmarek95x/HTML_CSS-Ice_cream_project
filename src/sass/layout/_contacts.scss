@@ -1,28 +1,27 @@
 .contacts {
-  height: 1502px;
-  margin-top: 80px;
   padding-bottom: 113px;
-  position: relative;
-  background-color: $colorBg3;
+  background-image: linear-gradient(180deg, $colorTheme1 4%, $colorBg3 0.05%, $colorBg3 100%);
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   &__btn {
     background: $mainColor;
     border-radius: $radiusBtnPrimary;
     border: none;
     height: 44px;
     width: 161.45px;
-    position: absolute;
-    left: 50%;
-    bottom: 167px;
-    transform: translateX(-50%);
     color: $colorTheme1;
     font-weight: $fontBold;
     font-size: $fontSizePrimary;
-    line-height: 1.31;
+    line-height: 1.313;
     text-align: left;
+    cursor: pointer;
   }
   &__franchise-btn {
+    margin-top: 10px;
     background-color: $colorTheme1;
-    bottom: 113px;
     &:hover,
     &:focus {
       background-color: $colorHoverPrimary;
@@ -33,7 +32,7 @@
       color: $mainColor;
     }
     &-ico {
-      width: 4px;
+      width: 4.28px;
       height: 8px;
       stroke: $mainColor;
     }
@@ -49,11 +48,8 @@
   }
 }
 .address {
-  position: absolute;
-  left: 50%;
-  top: -84px;
+  margin: 0 auto 54px;
   width: 220px;
-  transform: translateX(-50%);
   list-style-type: none;
 
   &__item {
@@ -69,29 +65,31 @@
   &__title {
     border-radius: 4px;
     font-weight: $fontMedium;
-    line-height: 1.83;
+    line-height: 1.833;
     color: $colorTheme1;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.04em;
     &--first {
       background-color: $colorBg5;
-      margin: 0 91px 25px 0;
+      width: 80px;
+      margin-right: auto;
     }
     &--second {
       background-color: $colorBg6;
-      margin: 0 49px 25px 0;
+      width: 130px;
+      margin-right: auto;
     }
   }
   &__location {
     margin-bottom: 25px;
-    padding-bottom: 25px;
+    padding: 25px 0;
     border-bottom: 1px solid $colorLine;
   }
   &__city {
     margin-bottom: 10px;
     font-weight: $fontMedium;
-    line-height: 1.83;
+    line-height: 1.833;
     letter-spacing: 0.04em;
     color: $colorFont1;
   }
@@ -104,7 +102,7 @@
     padding-bottom: 25px;
     border-bottom: 1px solid $colorLine;
     font-weight: $fontMedium;
-    line-height: 1.83;
+    line-height: 1.833;
   }
   &__days {
     color: $colorFont1;
@@ -128,19 +126,19 @@
 // -----------------768-----------------
 @media screen and (min-width: 768px) {
   .contacts {
-    height: 756px;
-    margin-top: 197px;
+    background-image: linear-gradient(180deg, $colorTheme1 9%, $colorBg3 0.05%, $colorBg3 100%);
     padding-bottom: 165px;
+    &__btns {
+      flex-direction: row;
+     justify-content: center;
+    }
     &__btn {
-      width: 198px;
-      left: 196px;
-      bottom: 165px;
-      transform: translateX(0);
+      width: 191px;
     }
     &__franchise-btn {
-      width: 198px;
-      left: 401.95px;
-      bottom: 165px;
+      margin-left: 14.5px;
+      width: 174px;
+      margin-top: 0;
       &-text {
         padding-left: 37.71px;
         padding-right: 13.17px;
@@ -160,8 +158,6 @@
   .address {
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    top: -78px;
     width: 700px;
     &__item {
       width: 220px;
@@ -169,40 +165,36 @@
       margin-bottom: 0;
     }
     &__title {
-
       &--first {
-        margin: 0 84px 30px 0;
+        width: 73px;
       }
       &--second {
-        margin: 0 19px 30px 0;
+        width: 138px;
       }
     }
     &__location {
       margin-bottom: 30px;
-      padding-bottom: 30px;
+      padding: 30px 0;
     }
-    &__city {
-      margin-bottom: 14px;
-    }
+
     &__openly {
       margin-bottom: 30px;
       padding-bottom: 30px;
     }
     &__contacts {
-      line-height: 1.86;
+      line-height: 1.857;
     }
   }
 }
 @media screen and (min-width: 1280px) {
   .contacts {
-    height: 765px;
-    margin-top: 234px;
+     background-image: linear-gradient(180deg, $colorTheme1 12%, $colorBg3 0.05%, $colorBg3 100%);
     &__btn {
-      left: 443px;
+      width: 198px;
     }
     &__franchise-btn {
+      margin-left: 15px;
       width: 180px;
-      left: 656px;
       &-text {
         padding-left: 39px;
         padding-right: 13.62px;
@@ -220,33 +212,21 @@
     }
   }
   .address {
-    top: -102px;
     width: 1050px;
     &__item {
       width: 330px;
       padding: 51px 53px 62px 43px;
     }
-    &__title {
-      &--first {
-        margin: 0 161px 32px 0;
-      }
-      &--second {
-        margin: 0 96px 32px 0;
-      }
-    }
     &__location {
       margin-bottom: 32px;
-      padding-bottom: 32px;
-    }
-    &__city {
-      margin-bottom: 10px;
+      padding: 32px 0;
     }
     &__openly {
       margin-bottom: 32px;
       padding-bottom: 32px;
     }
     &__contacts {
-      line-height: 1.86;
+      line-height: 1.813;
     }
   }
 }
