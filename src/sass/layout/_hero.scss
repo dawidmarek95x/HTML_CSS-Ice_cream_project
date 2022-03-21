@@ -1,0 +1,22 @@
+.hero {
+    background-image: #FFB8CA,
+    url(../../../images/icons/hero_circle.svg);
+    // & .container {
+    //     position: relative;
+    // }
+    &__image--milk,
+    &__description,
+    &__spots,
+    &__image--girl {
+        display: none;
+    }
+    &__image--icecream{
+        width: 171px;
+        height: 410px;
+        // position: absolute;
+        // left: 117px;
+        // top: 92px;
+        // z-index: 5;
+    }
+
+}
