@@ -7,6 +7,9 @@
     align-items: center;
   }
   &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: $mainColor;
     border-radius: $radiusBtnPrimary;
     border: none;
@@ -27,8 +30,7 @@
       background-color: $colorHoverPrimary;
     }
     &-text {
-      padding-left: 17px;
-      padding-right: 13.17px;
+      margin-right: 11px;
       color: $mainColor;
     }
     &-ico {
@@ -38,8 +40,7 @@
     }
   }
   &__btn-text {
-    padding-left: 17px;
-    padding-right: 8px;
+    margin-right: 8px;
   }
   &__btn-ico {
     width: 4px;
@@ -82,13 +83,13 @@
     }
   }
   &__location {
+    font-weight: $fontMedium;
     margin-bottom: 25px;
     padding: 25px 0;
     border-bottom: 1px solid $colorLine;
   }
   &__city {
     margin-bottom: 10px;
-    font-weight: $fontMedium;
     line-height: 1.833;
     letter-spacing: 0.04em;
     color: $colorFont1;
@@ -127,10 +128,10 @@
 @media screen and (min-width: 768px) {
   .contacts {
     background-image: linear-gradient(180deg, $colorTheme1 9%, $colorBg3 0.05%, $colorBg3 100%);
-    padding-bottom: 165px;
+    padding-bottom: 158px;
     &__btns {
       flex-direction: row;
-     justify-content: center;
+      justify-content: center;
     }
     &__btn {
       width: 191px;
@@ -140,16 +141,14 @@
       width: 174px;
       margin-top: 0;
       &-text {
-        padding-left: 37.71px;
-        padding-right: 13.17px;
+        margin-right: 13.17px;
       }
       &-ico {
         width: 4.26px;
       }
     }
     &__btn-text {
-      padding-left: 30px;
-      padding-right: 13.4px;
+      margin-right: 13.4px;
     }
     &__btn-ico {
       width: 4.26px;
@@ -159,6 +158,7 @@
     display: flex;
     justify-content: space-between;
     width: 700px;
+    margin-bottom: 81px;
     &__item {
       width: 220px;
       padding: 50px 32px 50px 31px;
@@ -188,7 +188,7 @@
 }
 @media screen and (min-width: 1280px) {
   .contacts {
-     background-image: linear-gradient(180deg, $colorTheme1 12%, $colorBg3 0.05%, $colorBg3 100%);
+    background-image: linear-gradient(180deg, $colorTheme1 12%, $colorBg3 0.05%, $colorBg3 100%);
     &__btn {
       width: 198px;
     }
@@ -196,16 +196,14 @@
       margin-left: 15px;
       width: 180px;
       &-text {
-        padding-left: 39px;
-        padding-right: 13.62px;
+        margin-right: 13.62px;
       }
       &-ico {
         width: 4.43px;
       }
     }
     &__btn-text {
-      padding-left: 35px;
-      padding-right: 13.62px;
+      margin-right: 13.62px;
     }
     &__btn-ico {
       width: 4.43px;
@@ -213,9 +211,10 @@
   }
   .address {
     width: 1050px;
+    margin-bottom: 86px;
     &__item {
       width: 330px;
-      padding: 51px 53px 62px 43px;
+      padding: 51px 44px 62px 43px;
     }
     &__location {
       margin-bottom: 32px;
