@@ -1,9 +1,7 @@
+.hero .container{
+    background-color: #FFB8CA;
+}
 .hero {
-    background-image: #FFB8CA,
-    url(../../../images/icons/hero_circle.svg);
-    // & .container {
-    //     position: relative;
-    // }
     &__image--milk,
     &__description,
     &__spots,

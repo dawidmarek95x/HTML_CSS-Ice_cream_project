@@ -544,9 +544,10 @@ img {
     width: 151px;
   }
 }
-.hero {
-  background-image: #FFB8CA, url(../../../images/icons/hero_circle.svg);
+.hero .container {
+  background-color: #FFB8CA;
 }
+
 .hero__image--milk, .hero__description, .hero__spots, .hero__image--girl {
   display: none;
 }
