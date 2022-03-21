@@ -546,15 +546,11 @@ img {
 }
 .hero {
   background-color: #ffb8ca;
-  background-image: url(./../images/hero/hero-icecream.png), url(./../images/icons/hero_circle.svg);
-  background-position: 117px 92px, 36px 83px;
-  background-repeat: no-repeat, no-repeat;
-  background-size: contain, cover;
   padding-top: 193px;
   padding-bottom: 160px;
   position: relative;
 }
-.hero__image--milk, .hero__description, .hero__spots, .hero__image--girl {
+.hero__image--milk, .hero__description, .hero__spots, .hero__image--icecream, .hero__image--girl {
   display: none;
 }
 .hero__header {
@@ -600,15 +596,81 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .hero {
-    background-image: url(./../images/hero/hero-icecream.png), url(./../images/icons/hero_circle.svg), url(./../images/hero/hero-girl.png);
-    background-position: 378px 63px, 307px 31px, 566px 266px;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: contain, cover, contain;
-    padding-top: 193px;
-    padding-bottom: 160px;
+    background-image: url(./../images/icons/hero_circle.svg);
+    background-position: 307px 31px;
+    background-repeat: no-repeat;
+    background-size: 324px 322px;
+    padding-top: 102px;
+    padding-bottom: 173px;
   }
-  .hero__description, .hero__spots {
+  .hero__description {
     display: block;
+    color: #fff;
+    width: 114px;
+    position: absolute;
+    left: 154px;
+    top: 292px;
+  }
+  .hero__paragraph {
+    font-size: 8px;
+    line-height: 1.5;
+  }
+  .hero__spots {
+    display: block;
+    position: absolute;
+    list-style: none;
+    left: 690px;
+    top: 94px;
+  }
+  .hero__spot {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero__counter {
+    font-size: 8px;
+    color: #fff;
+  }
+  .hero__counter--bigger {
+    font-family: "Titan One", cursive;
+    color: #d41443;
+    font-size: 28px;
+  }
+  .hero__header {
+    font-size: 22px;
+  }
+  .hero__header-span {
+    font-size: 34px;
+  }
+  .hero__header-wraperr {
+    display: block;
+    width: 20%;
+  }
+  .hero__buttons {
+    margin-top: 20px;
+  }
+  .hero__image--girl {
+    display: block;
+    width: 168px;
+    height: 133px;
+    position: absolute;
+    top: 266px;
+    left: 566px;
+  }
+  .hero__image--icecream {
+    display: block;
+    width: 143px;
+    height: 336px;
+    position: absolute;
+    left: 378px;
+    top: 63px;
+  }
+  .hero__image--milk {
+    display: block;
+    width: 124px;
+    height: 126px;
+    position: absolute;
+    left: 34px;
+    top: 245px;
   }
 }
 .products {

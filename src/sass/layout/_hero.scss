@@ -1,9 +1,9 @@
 .hero {
   background-color: $colorBg1;
-  background-image: url(./../images/hero/hero-icecream.png), url(./../images/icons/hero_circle.svg);
-  background-position: 117px 92px, 36px 83px;
-  background-repeat: no-repeat, no-repeat;
-  background-size: contain, cover;
+  // background-image: url(./../images/icons/hero_circle.svg);
+  // background-position:  36px 83px;
+  // background-repeat:  no-repeat;
+  // background-size:  cover;
   padding-top: 193px;
   padding-bottom: 160px;
 
@@ -11,6 +11,7 @@
   &__image--milk,
   &__description,
   &__spots,
+  &__image--icecream,
   &__image--girl {
     display: none;
   }
@@ -60,20 +61,86 @@
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .hero {
-      background-image: 
-      url(./../images/hero/hero-icecream.png),
-       url(./../images/icons/hero_circle.svg),
-       url(./../images/hero/hero-girl.png);
-  background-position: 378px 63px, 307px 31px, 566px 266px;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: contain, cover, contain;
-  padding-top: 193px;
-  padding-bottom: 160px;
-   
-    &__description,
-    &__spots,
-     {
+    background-image: url(./../images/icons/hero_circle.svg);
+    background-position: 307px 31px;
+    background-repeat: no-repeat;
+    background-size: 324px 322px;
+    padding-top: 102px;
+    padding-bottom: 173px;
+
+    &__description {
       display: block;
+      color: #fff;
+      width: 114px;
+      position: absolute;
+      left: 154px;
+      top: 292px;
+    }
+    &__paragraph {
+      font-size: 8px;
+      line-height: 1.5;
+    }
+    &__spots {
+      display: block;
+      position: absolute;
+      list-style: none;
+      left: 690px;
+      top: 94px;
+    }
+    &__spot {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__counter {
+      font-size: 8px;
+      color: #fff;
+      &--bigger {
+        font-family: $secondaryFont;
+        color: $mainColor;
+        font-size: 28px;
+      }
+    }
+    &__header {
+      font-size: 22px;
+      &-span {
+        font-size: $fontSizeHeaderMobile;
+      }
+      &-wraperr {
+        display: block;
+        width: 20%;
+      }
+    }
+    &__buttons {
+      margin-top: 20px;
+    }
+    &__image {
+      &--girl {
+        display: block;
+        width: 168px;
+        height: 133px;
+        position: absolute;
+        top: 266px;
+        left: 566px;
+      }
+      &--icecream {
+        display: block;
+        width: 143px;
+        height: 336px;
+        position: absolute;
+        left: 378px;
+        top:63px;
+      }
+      &--milk {
+        display: block;
+        width: 124px;
+        height: 126px;
+        position: absolute;
+        left: 34px;
+        top: 245px;
+
+
+      }
     }
   }
 }
