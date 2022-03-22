@@ -11,7 +11,6 @@
   align-items: center;
 }
 .menu__logo-link {
-  flex-grow: 2;
   width: 199px;
   height: 50px;
 }
@@ -209,6 +208,9 @@
   .mobile-menu {
     display: none !important;
   }
+  .menu {
+    justify-content: space-between;
+  }
 }
 // Mobile menu display rulesets
 // Mobile menu ruleset explicitly for 320px - 480px
@@ -219,6 +221,9 @@
       visibility: hidden;
       opacity: 0;
     }
+  }
+  .menu__logo-link {
+    flex-grow: 2;
   }
 }
 // Mobile menu ruleset explicitly for 768px - 1279px
