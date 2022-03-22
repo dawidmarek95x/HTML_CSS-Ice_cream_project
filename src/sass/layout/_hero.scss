@@ -7,7 +7,6 @@ margin: 0 auto;
   background-color: $colorBg1;
   overflow: hidden;
 
-
   &__header {
     width: 218px;
     margin-bottom: 19px;
@@ -243,6 +242,7 @@ margin: 0 auto;
     }
 
     &__counter {
+      width: 45px;
       margin-right: 10px;
       font-size: 8px;
       line-height: 1.25;
@@ -316,11 +316,13 @@ margin: 0 auto;
     &__btn--left {
       width: 104px;
       height: 40px;
+      font-size: $fontSizeSecondary;
     }
 
     &__btn--right {
       width: 138px;
       height: 40px;
+      font-size: $fontSizeSecondary;
     }
 
     &__introduction {
