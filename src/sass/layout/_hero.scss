@@ -234,6 +234,7 @@
     }
 
     &__counter {
+      width: 45px;
       margin-right: 10px;
       font-size: 8px;
       line-height: 1.25;
@@ -307,11 +308,13 @@
     &__btn--left {
       width: 104px;
       height: 40px;
+      font-size: $fontSizeSecondary;
     }
 
     &__btn--right {
       width: 138px;
       height: 40px;
+      font-size: $fontSizeSecondary;
     }
 
     &__introduction {

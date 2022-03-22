@@ -37,6 +37,7 @@
       width: 4.28px;
       height: 8px;
       stroke: $mainColor;
+      fill:none;
     }
   }
   &__btn-text {
@@ -46,6 +47,7 @@
     width: 3.61px;
     height: 8px;
     stroke: $colorTheme1;
+    fill:none;
   }
 }
 .address {
