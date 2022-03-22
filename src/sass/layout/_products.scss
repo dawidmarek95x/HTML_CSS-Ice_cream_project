@@ -102,29 +102,29 @@
   }
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .product {
-    &__card {
-      &--first {
-        &::before {
-          background-image: url('../images/products/ice_cream_mobile@2x.png');
-        }
-      }
+// @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//   .product {
+//     &__card {
+//       &--first {
+//         &::before {
+//           background-image: url('../images/products/ice_cream_mobile@2x.png');
+//         }
+//       }
 
-      &--second {
-        &::before {
-          background-image: url('../images/products/coffe_mobile@2x.png');
-        }
-      }
+//       &--second {
+//         &::before {
+//           background-image: url('../images/products/coffe_mobile@2x.png');
+//         }
+//       }
 
-      &--third {
-        &::before {
-          background-image: url('../images/products/milkshake_mobile@2x.png');
-        }
-      }
-    }
-  }
-}
+//       &--third {
+//         &::before {
+//           background-image: url('../images/products/milkshake_mobile@2x.png');
+//         }
+//       }
+//     }
+//   }
+// }
 
 // -----------------768-----------------
 @media screen and (min-width: 768px) {
@@ -193,29 +193,29 @@
     }
   }
 
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .product {
-      &__card {
-        &--first {
-          &::before {
-            background-image: url('../images/products/ice_cream_tablet@2x.png');
-          }
-        }
+  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   .product {
+  //     &__card {
+  //       &--first {
+  //         &::before {
+  //           background-image: url('../images/products/ice_cream_tablet@2x.png');
+  //         }
+  //       }
 
-        &--second {
-          &::before {
-            background-image: url('../images/products/coffe_tablet@2x.png');
-          }
-        }
+  //       &--second {
+  //         &::before {
+  //           background-image: url('../images/products/coffe_tablet@2x.png');
+  //         }
+  //       }
 
-        &--third {
-          &::before {
-            background-image: url('../images/products/milkshake_tablet@2x.png');
-          }
-        }
-      }
-    }
-  }
+  //       &--third {
+  //         &::before {
+  //           background-image: url('../images/products/milkshake_tablet@2x.png');
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 // -----------------1280-----------------
