@@ -1,3 +1,7 @@
+.hero .container {
+margin: 0 auto;
+}
+
 .hero {
   position: relative;
   background-color: $colorBg1;
@@ -82,7 +86,7 @@
       position: absolute;
       z-index: 1;
       display: block;
-      width: 346px;
+      min-width: 346px;
       height: 344px;
     }
   
@@ -90,7 +94,7 @@
       position: absolute;
       z-index: 2;
       display: block;
-      width: 171px;
+      min-width: 171px;
       height: 410px;
       margin-top: 9px;
       margin-left: 81px;
@@ -103,6 +107,10 @@
     }
   }
 }
+
+// @media screen and (min-width: 321px) and (max-width: 767px) {
+  
+// }
 
 @media screen and (min-width: 768px) {
   .hero {

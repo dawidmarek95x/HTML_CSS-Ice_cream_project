@@ -17,6 +17,266 @@
   justify-content: space-between;
   align-items: start;
 }
+.header-section {
+  position: absolute;
+  min-width: 100%;
+  padding-top: 6px;
+  background-color: transparent;
+  z-index: 5;
+}
+.mobile-menu {
+  transition: $mainTransition;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu__logo-link {
+  width: 199px;
+  height: 50px;
+}
+.navigation {
+  display: none;
+}
+.mobile-menu__open-btn {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+.mobile-menu__open-icon {
+  width: 20px;
+  height: 14px;
+}
+.menu__btn {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-section {
+    padding-top: 37px;
+  }
+  .menu {
+    align-items: center;
+  }
+  .menu__btn {
+    display: block;
+    width: 160px;
+    height: 44px;
+    background-color: $colorTheme1;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      background-color: $colorHoverPrimary;
+    }
+  }
+
+  .menu__arrow-icon {
+    width: 4px;
+    height: 8px;
+    margin-left: 12px;
+    fill: none;
+    stroke: $mainColor;
+  }
+
+  .mobile-menu__open-btn {
+    margin-top: 0;
+    margin-right: 30px;
+    margin-left: 291px;
+  }
+  .menu__btn-label {
+    color: $mainColor;
+    font-weight: $fontBold;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header-section .container {
+    padding-left: 46px;
+  }
+  .navigation {
+    display: block;
+  }
+  .nav {
+    display: flex;
+  }
+  .nav__item {
+    list-style: none;
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+  .nav_link {
+    text-decoration: none;
+    color: $colorTheme1;
+    
+    &:hover,
+    &:focus,
+    &--active {
+      color: $mainColor;
+    }
+  }
+  .mobile-menu__open-btn {
+    display: none;
+  }
+}
+// Mobile menu 320px - 767px ruleset
+.mobile-menu {
+  &__backdrop {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  &__window {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: $colorBg4;
+  }
+  &__list {
+    position: absolute;
+    top: 123px;
+    width: 100%;
+  }
+  &__item {
+    height: 42px;
+    width: 100%;
+    border: solid 1px #e18298;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+    display: flex;
+    align-items: center;
+    &:last-of-type {
+      border-bottom: solid 1px #e18298;
+    }
+  }
+  &__link {
+    padding-left: 21px;
+    width: 100%;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    color: $colorFont3;
+    font-weight: $fontBold;
+    font-size: $fontSizeSecondary;
+    &--active {
+      color: $colorFont4;
+    }
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
+}
+.menu-mobile__close-btn,
+.mobile-menu__btn {
+  border: none;
+  background: 0;
+}
+.menu-mobile__close-btn {
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  .menu-mobile__close-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+.mobile-menu__btn {
+  position: absolute;
+  transform: (translateX(-50%));
+  top: 60px;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 209px;
+  height: 44px;
+  padding: 0 49px;
+  background: $btnColor2;
+  border-radius: 22px;
+  .menu__btn-label {
+    color: $colorFont4;
+    font-weight: $fontBold;
+    font-size: $fontSizePrimary;
+  }
+  .menu__arrow-icon {
+    width: 5px;
+    height: 8px;
+    fill: none;
+    stroke: $mainColor;
+  }
+}
+// Mobile menu 768px - 1279px ruleset
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    &__backdrop {
+      transition: $mobileMenuTransition;
+      background: #adadadad;
+      position: fixed;
+      top: 0;
+      right: 0;
+    }
+    &__window {
+      // animation: animateX 2000ms forwards;
+      transform: translateX(-100%);
+      top: 0;
+      left: 100%;
+      width: 254px;
+      min-height: 502px;
+      transition: $mobileMenuTransition;
+    }
+  }
+}
+//Mobile menu 1280 px ruleset - hiding element
+@media screen and (min-width: 1280px) {
+  .mobile-menu {
+    display: none !important;
+  }
+  .menu {
+    justify-content: space-between;
+  }
+}
+// Mobile menu display rulesets
+// Mobile menu ruleset explicitly for 320px - 480px
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    &--is-hidden {
+      pointer-events: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  .menu__logo-link {
+    flex-grow: 2;
+  }
+}
+// Mobile menu ruleset explicitly for 768px - 1279px
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .mobile-menu {
+    &--is-hidden {
+      pointer-events: none;
+      .mobile-menu__backdrop {
+        background: 0;
+      }
+      .mobile-menu__window {
+        left: calc(100% + 255px);
+      }
+    }
+  }
+}
+
+// .header-section {
+//     min-width: 320px;
+//     padding: 6px 20px;
+//     &__menu {
+//         display: flex;
+//         justify-content: space-between;
 
 .menu__logo-link {
   width: 199px;
@@ -278,3 +538,11 @@
     }
   }
 }
+=======
+// .is-hidden {
+//   visibility: hidden;
+//   opacity: 0;
+//   pointer-events: none;
+// }
+
+
