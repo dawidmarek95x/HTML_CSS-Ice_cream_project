@@ -1,14 +1,14 @@
 (() => {
   const refs = {
-    openMobileMenuBtn: document.querySelector('[data-mobile-menu--open]'),
-    closeMobileMenuBtn: document.querySelector('[data-mobile-menu--close]'),
-    mobileMenu: document.querySelector('[data-mobile-menu]'),
-    mobileWindow: document.querySelector('[data-mobile-menu__window]'),
+    openModalBtn: document.querySelector('[data-mobile-menu--open]'),
+    closeModalBtn: document.querySelector('[data-mobile-menu--close]'),
+    modal: document.querySelector('[data-mobile-menu]'),
   };
-  refs.openMobileMenuBtn.addEventListener('click', toggleMobile);
-  refs.closeMobileMenuBtn.addEventListener('click', toggleMobile);
-  function toggleMobile() {
-    refs.mobileMenu.classList.toggle('mobile-menu--is-hidden');
-    // refs.mobileMenu.classList.toggle('mobile-menu__window--animated');
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('mobile-menu--is-hidden');
   }
 })();

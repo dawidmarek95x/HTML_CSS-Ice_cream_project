@@ -1,4 +1,4 @@
-.hero .contener {
+.hero .container {
 margin: 0 auto;
 }
 
@@ -73,7 +73,7 @@ margin: 0 auto;
       position: absolute;
       padding-top: 193px;
       padding-bottom: 160px;
-      z-index: 3;
+      z-index: 1;
     }
   
     &__right-side {
@@ -87,7 +87,7 @@ margin: 0 auto;
       position: absolute;
       z-index: 1;
       display: block;
-      width: 346px;
+      min-width: 346px;
       height: 344px;
     }
   
@@ -95,7 +95,7 @@ margin: 0 auto;
       position: absolute;
       z-index: 2;
       display: block;
-      width: 171px;
+      min-width: 171px;
       height: 410px;
       margin-top: 9px;
       margin-left: 81px;
@@ -108,6 +108,10 @@ margin: 0 auto;
     }
   }
 }
+
+// @media screen and (min-width: 321px) and (max-width: 767px) {
+  
+// }
 
 @media screen and (min-width: 768px) {
   .hero {
