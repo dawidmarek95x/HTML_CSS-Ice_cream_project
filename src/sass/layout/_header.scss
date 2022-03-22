@@ -3,7 +3,7 @@
   z-index: 1;
   width: 100%;
   min-width: 320px;
-  padding: 6px 0px;
+  padding-bottom: 12px;
 }
 .mobile-menu {
   transition: $mainTransition;
@@ -216,7 +216,7 @@
 @media screen and (min-width: 768px) {
   .mobile-menu {
     &__backdrop {
-      transition: $mobileMenuTransition;
+      transition: $mainTransition;
       background: #adadadad;
       position: fixed;
       top: 0;
@@ -229,7 +229,7 @@
       left: 100%;
       width: 254px;
       min-height: 502px;
-      transition: $mobileMenuTransition;
+      transition: $mainTransition;
     }
   }
 }
@@ -538,7 +538,7 @@
     }
   }
 }
-=======
+
 // .is-hidden {
 //   visibility: hidden;
 //   opacity: 0;
