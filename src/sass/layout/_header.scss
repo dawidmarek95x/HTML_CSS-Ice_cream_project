@@ -3,7 +3,9 @@
   padding: 6px 0px;
   background-color: $colorBg1;
 }
-
+.mobile-menu {
+  transition: $mainTransition;
+}
 .menu {
   display: flex;
   justify-content: space-between;
@@ -110,12 +112,6 @@
 
 // Mobile menu 320px - 767px ruleset
 .mobile-menu {
-  display: block;
-  &--is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
   &__backdrop {
     z-index: 10;
     position: fixed;
@@ -203,15 +199,15 @@
 }
 //Mobile menu 768px - 1279px ruleset
 
-@keyframes animateX {
-  0% {
-    transform: translateX(0);
-  }
+// @keyframes animateX {
+//   0% {
+//     transform: translateX(0);
+//   }
 
-  100% {
-    transform: translateX(-100%);
-  }
-}
+//   100% {
+//     transform: translateX(-100%);
+//   }
+// }
 
 @media screen and (min-width: 768px) {
   
@@ -222,19 +218,14 @@
       right: 0;
     }
     &__window {
-      animation: animateX 2000ms;
+      
       transform: translateX(-100%);
       top: 0;
       left: 100%;
       width: 254px;
       min-height: 502px;
       transition: $mainTransition;
-      
     }
-  }
-
-  .mobile-menu__window--animated {
-    animation-play-state: running;
   }
 
 }
@@ -244,3 +235,26 @@
     display: none !important;
   }
 }
+
+// Mobile menu display rulesets
+// Mobile menu ruleset explicitly for 320px - 480px
+@media screen and (min-width:320px) and (max-width:767px){
+  .mobile-menu {
+    &--is-hidden {
+      pointer-events: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }}
+
+  // Mobile menu ruleset explicitly for 768px - 1279px
+  @media screen and (min-width: 768px) and (max-width:1279px){
+    .mobile-menu {
+      &--is-hidden {
+        pointer-events: none;
+        .mobile-menu__window {
+          left: calc(100% + 255px)
+        }
+      }
+    }
+  }
