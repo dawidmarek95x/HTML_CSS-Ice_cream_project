@@ -1,60 +1,95 @@
 <!-- Hero section -->
 <section class="hero">
   <div class="container">
-    <!-- tu position: relative; i elementy rozmieszczone za pomocą position: absolute; -->
-    <h1 class="hero__header"><span class="hero__header-wraperr">ice cream made with </span><span class="hero__header-span">passion</span></h1>
+    <div class="hero__left-side">
+      <h1 class="hero__header">
+        <span class="hero__header-label">ice cream made with </span>
+        <span class="hero__header-title">passion</span>
+      </h1>
 
-    <ul class="hero__buttons">
-      <li class="hero__btn">
-        <a href="#contact" class="hero__btn--left">Products</a>
-      </li>
+      <ul class="hero__buttons">
+        <li class="hero__btn">
+          <a href="#contact" class="hero__btn--link hero__btn--left">Products</a>
+        </li>
 
-      <li class="hero__btn">
-        <a href="#howmade" class="hero__btn--right">How it's made?</a>
-      </li>
-    </ul>
+        <li class="hero__btn">
+          <a href="#howmade" class="hero__btn--link hero__btn--right">How it's made?</a>
+        </li>
+      </ul>
 
-    <img src="./images/hero/hero-milk.png" alt="Bio milk" class="hero__image--milk" />
+      <div class="hero__introduction">
+        <picture class="hero__picture--milk">
+          <source srcset="./images/hero/desktop/hero-milk.png 1x, 
+          ./images/hero/desktop/hero-milk@2x.png 2x"
+          media="(min-width: 1280px)">
+          <source srcset="./images/hero/tablet/hero-milk.png 1x, 
+          ./images/hero/tablet/hero-milk@2x.png 2x"
+          media="(min-width: 768px)">
+          <img src="./images/hero/desktop/hero-milk.png" alt="Bio milk" class="hero__image--milk" />
+        </picture>
 
-    <div class="hero__description">
-      <p class="hero__paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et
-      </p>
-      <button type="button" class="hero__arrow-btn" data-modal--open></button>
+        <div class="hero__description">
+          <p class="hero__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et
+          </p>
+          <button type="button" class="hero__arrow-btn" data-modal--open></button>
+        </div>
+      </div>
     </div>
-    
-    <img
-      src="./images/hero/hero-icecream.png"
-      alt="Tasty ice cream"
-      class="hero__image--icecream"
-    />
-    <img src="./images/hero/hero-circle.png" alt="circle" class="hero__image--circle"/>
+    <div class="hero__right-side">
+      <picture class="hero__picture--milk">
+        <source srcset="./images/hero/desktop/hero-circle.png 1x, 
+        ./images/hero/desktop/hero-circle@2x.png 2x"
+        media="(min-width: 1280px)">
+        <source srcset="./images/hero/tablet/hero-circle.png 1x, 
+        ./images/hero/tablet/hero-circle@2x.png 2x"
+        media="(min-width: 768px)">
+        <source srcset="./images/hero/hero-circle.png 1x, 
+        ./images/hero/hero-circle@2x.png 2x"
+        media="(min-width: 320px)">
+        <img 
+        src="./images/hero/hero-circle.png" 
+        alt="pink circle" 
+        class="hero__image--circle"/>
+      </picture>
 
-    <ul class="hero__spots">
-      <li class="hero__spot">
-        <span class="hero__counter--bigger">16</span>
-        <span class="hero__counter">cafes</span>
-        <img src="./images/hero/hero-littlecircle.png" alt="white circle" class="hero__cunter--circle">
+      <picture class="hero__picture--icecream">
+        <source srcset="./images/hero/desktop/hero-icecream.png 1x, 
+        ./images/hero/desktop/hero-icecream@2x.png 2x"
+        media="(min-width: 1280px)">
+        <source srcset="./images/hero/tablet/hero-icecream.png 1x, 
+        ./images/hero/tablet/hero-icecream@2x.png 2x"
+        media="(min-width: 768px)">
+        <source srcset="./images/hero/hero-icecream.png 1x, 
+        ./images/hero/hero-icecream@2x.png 2x"
+        media="(min-width: 320px)">
+        <img
+        src="./images/hero/desktop/hero-icecream.png"
+        alt="Tasty ice cream"
+        class="hero__image--icecream"
+        />
+      </picture>
 
-      </li>
+      <ul class="hero__spots">
+        <li class="hero__spot">
+          <span class="hero__counter--bigger">16</span>
+          <span class="hero__counter">cafes</span>
 
-      <li class="hero__spot">
-        <span class="hero__counter--bigger">23</span>
-        <span class="hero__counter">food trucks</span>
-        <img src="./images/hero/hero-littlecircle.png" alt="white circle" class="hero__cunter--circle">
-        
-        
-        
-      </li>
-    </ul>
+        </li>
 
-    <img
-      src="./images/hero/hero-girl.png"
-      alt="Girl with tasty ice cream"
-      class="hero__image--girl"
-    />
-    
+        <li class="hero__spot">
+          <span class="hero__counter--bigger">23</span>
+          <span class="hero__counter">food trucks</span>
+        </li>
+      </ul>
+
+      <img
+        src="./images/hero/tablet/hero-girl.png"
+        alt="Girl with tasty ice cream"
+        class="hero__image--girl"
+      />
+    </div>
   </div>
 </section>
 <!-- Hero section END -->

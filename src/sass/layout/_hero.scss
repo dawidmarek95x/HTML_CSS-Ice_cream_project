@@ -1,328 +1,410 @@
 .hero {
-  background-color: $colorBg1;
-    height: 502px;
   position: relative;
-  &__image--girl,
-  &__image--milk,
-  &__spots,
-  &__description {
-    display: none;
-  }
+  background-color: $colorBg1;
+
   &__header {
+    width: 218px;
+    margin-bottom: 19px;
     font-family: $secondaryFont;
-    color: $colorFont3;
-    font-size: $fontSizeLabelTablet;
-    letter-spacing: 0,04em;
     text-transform: uppercase;
-    position: absolute;
-    left: 20px;
-    top: 193px;
-    z-index: 3;
-    &-span {
-      color: $mainColor;
-      font-size: $fontSizeHeaderTablet;
-    }
-    &-wraperr {
-      display: block;
-      width: 60%;
-    }
   }
+
+  &__header-label {
+    font-size: $fontSizeLabelTablet;
+    line-height: 1.154;
+    letter-spacing: 0.04em;
+    color: $colorFont3;
+  }
+
+  &__header-title {
+    font-size: $fontSizeHeaderTablet;
+    line-height: 0.958;
+    color: $mainColor;
+  }
+
   &__buttons {
-    list-style: none;
-    margin-top: 19px;
     display: flex;
-    position: absolute;
-    left: 20px;
-    top: 318px;
-    z-index: 3;
+    list-style-type: none;
   }
+
   &__btn {
-    display: block;
-    height: 100%;
-
-    & a {
-      text-decoration: none;
-      font-family: $mainFont;
-      font-size: 8px;
-      padding: 8px 15px;
-    }
-
-    &--left {
-      background: $mainColor;
-      border-radius: $radiusBtnSecondary;
-      color: $colorFont3;
-      &:hover,
-      &:focus {
-        background: $colorHoverSecondary;
-      }
-    }
-    &--right {
-      background: #fff;
-      border-radius: $radiusBtnSecondary;
-      margin-left: 8px;
-      color: $mainColor;
-      &:hover,
-      &:focus {
-        background: $colorHoverPrimary;
-      }
+    &:first-child {
+      margin-right: 8px;
     }
   }
-  &__image--circle {
-    position: absolute;
-    top: 83px;
-    left: 36px;
-    z-index: 1;
-    background-color: transparent;
+
+  &__btn--link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: $radiusBtnSecondary;
+    font-size: 8px;
+    line-height: 1.25;
+    text-decoration-line: none;
   }
-  &__image--icecream {
-    position: absolute;
-    left: 117px;
-    top: 92px;
-    width: 171px;
-    height: 410px;
-    z-index: 2;
-    background-color: transparent;
+
+  &__btn--left {
+    width: 62.4px;
+    height: 24px;
+    color: $colorFont3;
+    background-color: $mainColor;
+  }
+
+  &__btn--right {
+    width: 82.8px;
+    height: 24px;
+    color: $mainColor;
+    background-color: $colorTheme1;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (max-width: 767px) {
   .hero {
-    height: 399px;
-   
-    position: relative;
-    &__header {
-      font-family: $secondaryFont;
-      color: $colorFont3;
-      font-size: 22px;
-      text-transform: uppercase;
+    height: 502px;
+
+    &__left-side{
       position: absolute;
-      left: 34px;
-      top: 102px;
+      padding-top: 193px;
+      padding-bottom: 160px;
       z-index: 3;
-      &-span {
-        color: $mainColor;
-        font-size: $fontSizeHeaderMobile;
-      }
-      &-wraperr {
-        display: block;
-        width: 60%;
-      }
     }
-    &__buttons {
+  
+    &__right-side {
       position: absolute;
-      left: 34px;
-      top: 202px;
+      padding-left: 16px;
+      padding-top: 83px;
+      z-index: 0;
     }
-    &__btn {
-      display: block;
-      height: 100%;
-      border: none;
-
-      & a {
-        text-decoration: none;
-        font-family: $mainFont;
-        font-size: 8px;
-        padding: 8px 15px;
-      }
-
-      &--left {
-        background: $mainColor;
-        border-radius: $radiusBtnSecondary;
-        color: $colorFont3;
-      }
-      &--right {
-        background: #fff;
-        border-radius: $radiusBtnSecondary;
-        margin-left: 8px;
-        color: $mainColor;
-      }
-    }
+  
     &__image--circle {
       position: absolute;
-      top: 31px;
-      left: 307px;
       z-index: 1;
-      width: 324px;
-      height: 322px;
-      background-color: transparent;
+      display: block;
+      width: 346px;
+      height: 344px;
     }
+  
     &__image--icecream {
       position: absolute;
-      left: 378px;
-      top: 63px;
-      width: 143px;
-      height: 336px;
       z-index: 2;
-      background-color: transparent;
+      display: block;
+      width: 171px;
+      height: 410px;
+      margin-top: 9px;
+      margin-left: 81px;
     }
+  
+    &__introduction,
+    &__spots,
+    &__image--girl {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    
+    & .container {
+      display: flex;
+    }
+
+    &__left-side {
+      width: 238px;
+      padding-top: 102px;
+      padding-bottom: 28px;
+      margin-right: 39px;
+    }
+
+    &__header {
+      width: 162px;
+      margin-bottom: 20px;
+    }
+  
+    &__header-label {
+      font-size: 22px;
+      line-height: 1.136;
+    }
+  
+    &__header-title {
+      font-size: $fontSizeHeaderMobile;
+      line-height: 0,912;
+      letter-spacing: 0.04em;
+    }
+
+    &__buttons {
+      margin-bottom: 19px;
+    }
+  
+    &__btn {
+      &:first-child {
+        margin-right: 9.2px;
+      }
+    }
+
+    &__introduction {
+      display: flex;
+    }
+
     &__image--milk {
       display: block;
-      position: absolute;
-      left: 34px;
-      top: 245px;
       width: 124px;
       height: 126px;
     }
-    &__description {
-      display: block;
-      width: 114px;
-      font-size: 8px;
-      color: #fff;
-      position: absolute;
-      left: 154px;
-      top: 292px;
-    }
-    &__arrow-btn {
-      background-image: url(./../images/hero/hero-arrow.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 18px 18px;
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      margin-top: 7px;
-      border: none;
-    }
-    &__spots {
-      display: flex;
-      flex-direction: column;
-      align-content: flex-end;
-      list-style: none;
-      position: absolute;
-      left: 691px;
-      top: 96px;
-    }
-    &__spot {
-      display: block;
-      width: 43px;
-      text-align: end;
-      margin-bottom: 13px;
-      position: relative;
-    }
-    
-    &__counter {
-      font-size: 8px;
-      color: #fff;
-      &--bigger {
-        font-family: $secondaryFont;
-        font-size: 28px;
-        color: $mainColor;
-      }
-      &--circle {
-      position: absolute;
-      top: 0;
-      right: 0;
 
+    &__description {
+      width: 114px;
+      padding-top: 47px;
+    }
+
+    &__paragraph {
+      margin-bottom: 7px;
+      font-size: 8px;
+      line-height: 1.5;
+      color: $colorFont3;
+    }
+
+    &__arrow-btn {
       width: 18px;
       height: 18px;
+      border: none;
+      border-radius: 50%;
+      background-image: url(../images/hero/tablet/hero-arrow.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      cursor: pointer;
     }
+
+    &__right-side {
+      position: relative;
+      width: 100%;
+      padding-top: 94px;
+    }
+
+    &__image--circle {
+      position: absolute;
+      bottom: 46px;
+      left: 0;
+      display: block;
+      width: 324px;
+      height: 322px;
+    }
+
+    &__image--icecream {
+      position: absolute;
+      bottom: 0;
+      left: 71px;
+      display: block;
+      width: 143px;
+      height: 336px;
+    }
+
+    &__spots {
+      position: absolute;
+      right: 0;
+      list-style-type: none;
+    }
+
+    &__spot {
+      width: 51px;
+      text-align: right;
+      background-image: url(../images/hero/tablet/hero-littlecircle.png);
+      background-repeat: no-repeat;
+      background-position: top right;
+
+      &:first-child {
+        margin-bottom: 13px;
+      }
+    }
+
+    &__counter--bigger {
+      position: relative;
+      margin-right: 10px;
+      font-family: $secondaryFont;
+      font-size: 28px;
+      line-height: 1.143;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: $mainColor;
+    }
+
+    &__counter {
+      margin-right: 10px;
+      font-size: 8px;
+      line-height: 1.25;
+      color: $colorFont3;
+    }
+
+    &__image--girl {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 168px;
+      height: 133px;
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero{
+      &__arrow-btn {
+        background-image: url(../images/hero/tablet/hero-arrow@2x.png);
+      }
+  
+      &__spot {
+        background-image: url(../images/hero/tablet/hero-littlecircle@2x.png);
+      }
     }
   }
 }
+
 @media screen and (min-width: 1280px) {
   .hero {
-    height: 665px;
-    position: relative;
-    &__header {
-      font-size: 38px;
-      position: absolute;
-      left: 115px;
-      top: 171px;
-      z-index: 3;
-      &-span {
-        font-size: $fontSizeHeaderDesktop;
-      }
+    & .container {
+      position: relative;
+      padding-left: 77px;
+      padding-right: 97px;
     }
-    &__buttons {
-      position: absolute;
-      left: 115px;
-      top: 333px;
-    }
-    &__btn {
-      & a {
-        font-size: $fontSizeSecondary;
-        padding: 13px 20px;
-      }
 
-      &--right {
-        margin-left: 17px;
+    &__left-side {
+      width: 418px;
+      padding-top: 171px;
+      padding-bottom: 45px;
+      margin-right: 0;
+    }
+
+    &__header {
+      width: 277px;
+      margin-bottom: 25px;
+      padding-left: 38px;
+    }
+  
+    &__header-label {
+      font-size: 38px;
+      line-height: 1.158;
+    }
+  
+    &__header-title {
+      font-size: $fontSizeHeaderDesktop;
+      line-height: 0,897;
+    }
+
+    &__buttons {
+      margin-bottom: 56px;
+      padding-left: 38px;
+    }
+  
+    &__btn {
+      &:first-child {
+        margin-right: 15px;
       }
     }
+
+    &__btn--left {
+      width: 104px;
+      height: 40px;
+    }
+
+    &__btn--right {
+      width: 138px;
+      height: 40px;
+    }
+
+    &__introduction {
+      display: flex;
+    }
+
+    &__image--milk {
+      display: block;
+      width: 188px;
+      height: 191px;
+      margin-right: 30px;
+    }
+
+    &__description {
+      width: 200px;
+      padding-top: 56px;
+    }
+
+    &__paragraph {
+      margin-bottom: 20px;
+      font-size: $fontSizeSecondary;
+      line-height: 1,429;
+      color: $colorFont3;
+    }
+
+    &__arrow-btn {
+      width: 26px;
+      height: 26px;
+      border: none;
+      border-radius: 50%;
+      background-image: url(../images/hero/desktop/hero-arrow.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &__right-side {
+      position: relative;
+      width: 805px;
+      margin-left: -27px;
+      padding-top: 156px;
+    }
+
     &__image--circle {
       position: absolute;
-      top: 52px;
-      left: 475px;
+      bottom: 75px;
+      left: 0;
+      display: block;
       width: 538px;
       height: 538px;
     }
+
     &__image--icecream {
-      position: absolute;
-      left: 594px;
-      top: 108px;
+      left: 119px;
       width: 236px;
       height: 557px;
-      }
-    &__image--milk {
-      display: block;
-      position: absolute;
-      left: 77px;
-      top: 429px;
-      width: 185px;
-      height: 191px;
     }
-    &__description {
-      display: block;
-      width: 200px;
-      font-size: 14px;
-      color: #fff;
-      position: absolute;
-      left: 295px;
-      top: 485px;
-    }
-    &__arrow-btn {
-      background-image: url(./../images/hero/hero-arrow.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 26px 26px;
-      width: 26px;
-      height: 26px;
-      margin-top: 20px;
-      border-radius: 50%;
-      border:none;
-    }
-    &__spots {
-      display: flex;
-      flex-direction: column;
-      align-content: flex-end;
-      list-style: none;
-      position: absolute;
-      left: 1111px;
-      top: 160px;
-    }
-    &__spot {
-      display: block;
-      width: 76px;
-      text-align: end;
-      margin-bottom: 18px;
-      position: relative;
-    }
-    
-    &__counter {
-      font-size: 14px;
-      color: #fff;
-      &--bigger {
-        font-family: $secondaryFont;
-        font-size: 46px;
-        color: $mainColor;
-      }
-      &--circle {
-      position: absolute;
-      top: 0;
-      right: 0;
 
-      width: 18px;
-      height: 18px;
+    &__spot {
+      width: 92px;
+      background-image: url(../images/hero/desktop/hero-littlecircle.png);
+
+      &:first-child {
+        margin-bottom: 15px;
+      }
     }
+
+    &__counter--bigger {
+      margin-right: 18px;
+      font-size: 46px;
+      line-height: 1.152;
+    }
+
+    &__counter {
+      margin-right: 18px;
+      font-size: $fontSizeSecondary;
+      line-height: 1.286;
+    }
+
+    &__image--girl {
+      right: 12px;
+      width: 293px;
+      height: 232px;
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero{
+      &__arrow-btn {
+        background-image: url(../images/hero/desktop/hero-arrow@2x.png);
+      }
+  
+      &__spot {
+        background-image: url(../images/hero/desktop/hero-littlecircle@2x.png);
+      }
     }
   }
 }
