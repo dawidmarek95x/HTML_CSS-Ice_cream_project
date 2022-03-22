@@ -222,14 +222,19 @@
       right: 0;
     }
     &__window {
-      animation: animateX 2000ms forwards;
+      animation: animateX 2000ms;
       transform: translateX(-100%);
       top: 0;
       left: 100%;
       width: 254px;
       min-height: 502px;
       transition: $mainTransition;
+      
     }
+  }
+
+  .mobile-menu__window--animated {
+    animation-play-state: running;
   }
 
 }
@@ -239,40 +244,3 @@
     display: none !important;
   }
 }
-
-// .header-section {
-//     min-width: 320px;
-//     padding: 6px 20px;
-// //     &__menu {
-// //         display: flex;
-// //         justify-content: space-between;
-
-// // }
-// }
-
-// .menu-logo__link__logo {
-//     width: 199px;
-//     height: 50px;
-// }
-// .menu-nav,
-// .menu-buy-bnt {
-//     display: none;
-// }
-
-// .menu-mobile-open-bnt{
-//     border: none;
-//     background-color: transparent;
-//     // margin-top: 25px;
-
-//     &__icon {
-//     width: 20px;
-//     height: 14px;
-//     fill: #D41443;
-// }
-// }
-
-// .is-hidden {
-//   visibility: hidden;
-//   opacity: 0;
-//   pointer-events: none;
-// }
