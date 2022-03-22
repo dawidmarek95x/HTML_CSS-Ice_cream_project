@@ -3,47 +3,41 @@
   padding: 6px 0px;
   background-color: $colorBg1;
 }
-
+.mobile-menu {
+  transition: $mainTransition;
+}
 .menu {
   display: flex;
   justify-content: space-between;
   align-items: start;
 }
-
 .menu__logo-link {
   width: 199px;
   height: 50px;
 }
-
 .navigation {
   display: none;
 }
-
 .mobile-menu__open-btn {
   display: flex;
   border: none;
   background-color: transparent;
   margin-top: 19px;
 }
-
 .mobile-menu__open-icon {
   width: 20px;
   height: 14px;
 }
-
 .menu__btn {
   display: none;
 }
-
 @media screen and (min-width: 768px) {
   .header-section {
     padding-top: 37px;
   }
-
   .menu {
     align-items: center;
   }
-
   .menu__btn {
     display: block;
     width: 160px;
@@ -57,7 +51,6 @@
       background-color: $colorHoverPrimary;
     }
   }
-
   .menu__arrow-icon {
     width: 4px;
     height: 8px;
@@ -68,33 +61,27 @@
     margin-right: 30px;
     margin-left: 291px;
   }
-
   .menu__btn-label {
     color: $mainColor;
     font-weight: $fontBold;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .header-section .container {
     padding-left: 46px;
   }
-
   .navigation {
     display: block;
   }
-
   .nav {
     display: flex;
   }
-
   .nav__item {
     list-style: none;
     &:not(:last-child) {
       margin-right: 35px;
     }
   }
-
   .nav_link {
     text-decoration: none;
     color: $colorTheme1;
@@ -102,20 +89,12 @@
       color: $mainColor;
     }
   }
-
   .mobile-menu__open-btn {
     display: none;
   }
 }
-
 // Mobile menu 320px - 767px ruleset
 .mobile-menu {
-  display: block;
-  &--is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
   &__backdrop {
     z-index: 10;
     position: fixed;
@@ -201,20 +180,10 @@
     height: 8px;
   }
 }
-//Mobile menu 768px - 1279px ruleset
-
-@keyframes animateX {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
-}
+// Mobile menu 768px - 1279px ruleset
 
 @media screen and (min-width: 768px) {
-  
+
   .mobile-menu {
     &__backdrop {
       position: fixed;
@@ -231,7 +200,6 @@
       transition: $mainTransition;
     }
   }
-
 }
 //Mobile menu 1280 px ruleset - hiding element
 @media screen and (min-width: 1280px) {
@@ -239,40 +207,28 @@
     display: none !important;
   }
 }
+// Mobile menu display rulesets
+// Mobile menu ruleset explicitly for 320px - 480px
+@media screen and (min-width:320px) and (max-width:767px){
+  .mobile-menu {
+    &--is-hidden {
+      pointer-events: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }}
+  // Mobile menu ruleset explicitly for 768px - 1279px
+  @media screen and (min-width: 768px) and (max-width:1279px){
+    .mobile-menu {
+      &--is-hidden {
+        pointer-events: none;
+        .mobile-menu__window {
+          left: calc(100% + 255px)
+        }
+      }
+    }
+  }
 
-// .header-section {
-//     min-width: 320px;
-//     padding: 6px 20px;
-// //     &__menu {
-// //         display: flex;
-// //         justify-content: space-between;
-
-// // }
-// }
-
-// .menu-logo__link__logo {
-//     width: 199px;
-//     height: 50px;
-// }
-// .menu-nav,
-// .menu-buy-bnt {
-//     display: none;
-// }
-
-// .menu-mobile-open-bnt{
-//     border: none;
-//     background-color: transparent;
-//     // margin-top: 25px;
-
-//     &__icon {
-//     width: 20px;
-//     height: 14px;
-//     fill: #D41443;
-// }
-// }
-
-// .is-hidden {
-//   visibility: hidden;
-//   opacity: 0;
-//   pointer-events: none;
-// }
+  .mobile-menu__window--animated{
+    animation: fadeIn 1000ms ease-in-out;
+  }
