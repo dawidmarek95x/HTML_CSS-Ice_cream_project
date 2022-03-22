@@ -84,11 +84,19 @@
         </li>
       </ul>
 
-      <img
+      <picture class="hero__picture--girl">
+        <source srcset="./images/hero/desktop/hero-girl.png 1x, 
+        ./images/hero/desktop/hero-girl@2x.png 2x"
+        media="(min-width: 1280px)">
+        <source srcset="./images/hero/tablet/hero-girl.png 1x, 
+        ./images/hero/tablet/hero-girl@2x.png 2x"
+        media="(min-width: 768px)">
+        <img
         src="./images/hero/tablet/hero-girl.png"
         alt="Girl with tasty ice cream"
-        class="hero__image--girl"
-      />
+        class="hero__image--girl"/>
+      </picture>
+     
     </div>
   </div>
 </section>

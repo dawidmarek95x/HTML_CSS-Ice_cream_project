@@ -1,6 +1,12 @@
+.hero .contener {
+margin: 0 auto;
+}
+
 .hero {
   position: relative;
   background-color: $colorBg1;
+  overflow: hidden;
+
 
   &__header {
     width: 218px;
