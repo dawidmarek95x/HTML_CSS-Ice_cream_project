@@ -1,7 +1,9 @@
 .header-section {
-  min-width: 320px;
-  padding: 6px 0px;
-  background-color: $colorBg1;
+  position: absolute;
+  min-width: 100%;
+  padding-top: 6px;
+  background-color: transparent;
+  z-index: 5;
 }
 .mobile-menu {
   transition: $mainTransition;
@@ -52,11 +54,14 @@
       background-color: $colorHoverPrimary;
     }
   }
+
   .menu__arrow-icon {
     width: 4px;
     height: 8px;
     margin-left: 12px;
+    fill: $mainColor;
   }
+
   .mobile-menu__open-btn {
     margin-top: 0;
     margin-right: 30px;
@@ -86,6 +91,9 @@
   .nav_link {
     text-decoration: none;
     color: $colorTheme1;
+    
+    &:hover,
+    &:focus,
     &--active {
       color: $mainColor;
     }
@@ -214,7 +222,7 @@
 }
 // Mobile menu display rulesets
 // Mobile menu ruleset explicitly for 320px - 480px
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .mobile-menu {
     &--is-hidden {
       pointer-events: none;
