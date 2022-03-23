@@ -74,14 +74,14 @@ margin: 0 auto;
       padding-bottom: 160px;
       z-index: 1;
     }
-  
+
     &__right-side {
       position: absolute;
       padding-left: 16px;
       padding-top: 83px;
       z-index: 0;
     }
-  
+
     &__image--circle {
       position: absolute;
       z-index: 1;
@@ -89,7 +89,7 @@ margin: 0 auto;
       min-width: 346px;
       height: 344px;
     }
-  
+
     &__image--icecream {
       position: absolute;
       z-index: 2;
@@ -99,7 +99,7 @@ margin: 0 auto;
       margin-top: 9px;
       margin-left: 81px;
     }
-  
+
     &__introduction,
     &__spots,
     &__image--girl {
@@ -108,8 +108,12 @@ margin: 0 auto;
   }
 }
 
+.hero__description-more--is-hidden{
+  display: none;
+}
+
 // @media screen and (min-width: 321px) and (max-width: 767px) {
-  
+
 // }
 
 @media screen and (min-width: 768px) {
@@ -117,7 +121,7 @@ margin: 0 auto;
     position: static;
     display: flex;
     justify-content: space-between;
-    
+
     & .container {
       display: flex;
     }
@@ -133,12 +137,12 @@ margin: 0 auto;
       width: 162px;
       margin-bottom: 20px;
     }
-  
+
     &__header-label {
       font-size: 22px;
       line-height: 1.136;
     }
-  
+
     &__header-title {
       font-size: $fontSizeHeaderMobile;
       line-height: 0,912;
@@ -148,7 +152,7 @@ margin: 0 auto;
     &__buttons {
       margin-bottom: 19px;
     }
-  
+
     &__btn {
       &:first-child {
         margin-right: 9.2px;
@@ -263,7 +267,7 @@ margin: 0 auto;
       &__arrow-btn {
         background-image: url(../images/hero/tablet/hero-arrow@2x.png);
       }
-  
+
       &__spot {
         background-image: url(../images/hero/tablet/hero-littlecircle@2x.png);
         background-size: 35%;
@@ -292,12 +296,12 @@ margin: 0 auto;
       margin-bottom: 25px;
       padding-left: 38px;
     }
-  
+
     &__header-label {
       font-size: 38px;
       line-height: 1.158;
     }
-  
+
     &__header-title {
       font-size: $fontSizeHeaderDesktop;
       line-height: 0,897;
@@ -307,7 +311,7 @@ margin: 0 auto;
       margin-bottom: 56px;
       padding-left: 38px;
     }
-  
+
     &__btn {
       &:first-child {
         margin-right: 15px;
@@ -414,7 +418,7 @@ margin: 0 auto;
       &__arrow-btn {
         background-image: url(../images/hero/desktop/hero-arrow@2x.png);
       }
-  
+
       &__spot {
         background-image: url(../images/hero/desktop/hero-littlecircle@2x.png);
       }
