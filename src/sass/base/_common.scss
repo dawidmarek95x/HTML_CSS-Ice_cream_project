@@ -2,6 +2,9 @@ body {
   font-family: $mainFont;
   font-size: $fontSizePrimaryMobile;
   color: $colorFont1;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 h1,
@@ -24,6 +27,11 @@ ul {
 
 img {
   display: block;
+}
+
+button {
+  transition: background-color $mainTransition;
+  cursor: $cursor;
 }
 
 @media screen and (min-width: 768px) {

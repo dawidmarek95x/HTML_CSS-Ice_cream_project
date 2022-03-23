@@ -301,12 +301,13 @@
 .menu__btn {
   display: none;
 }
-@media screen and (max-width:767px) {
-    .mobile-menu {
-        position: fixed;
-        top: 0;left: 0;
-        z-index: 9999;
-    }
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
 }
 @media screen and (min-width: 768px) {
   .header-section {
@@ -335,7 +336,7 @@
     width: 8px;
     height: 8px;
     margin-left: 12px;
-    stroke:$icoFill2;
+    stroke: $icoFill2;
     fill: none;
   }
   .mobile-menu__open-btn {
@@ -394,6 +395,7 @@
     height: 100vh;
   }
   &__window {
+    overflow: scroll;
     position: relative;
     width: 100%;
     height: 100%;
@@ -468,8 +470,8 @@
   .menu__arrow-icon {
     width: 5px;
     height: 8px;
-    stroke:$mainColor;
-    fill:none;
+    stroke: $mainColor;
+    fill: none;
   }
 }
 //Mobile menu 768px - 1279px ruleset
@@ -494,7 +496,7 @@
       // background: #ffffffb2;
     }
     &__window {
-    //   animation: animateX 2000ms forwards;
+      //   animation: animateX 2000ms forwards;
       transform: translateX(-100%);
       top: 0;
       left: 100%;
@@ -543,5 +545,3 @@
 //   opacity: 0;
 //   pointer-events: none;
 // }
-
-
