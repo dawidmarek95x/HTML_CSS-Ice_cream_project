@@ -219,7 +219,7 @@ margin: 0 auto;
     }
 
     &__spot {
-      width: 51px;
+      width: 53px;
       text-align: right;
       background-image: url(../images/hero/tablet/hero-littlecircle.png);
       background-repeat: no-repeat;
@@ -266,6 +266,7 @@ margin: 0 auto;
   
       &__spot {
         background-image: url(../images/hero/tablet/hero-littlecircle@2x.png);
+        background-size: 35%;
       }
     }
   }

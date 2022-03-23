@@ -216,8 +216,8 @@
 @media screen and (min-width: 768px) {
   .mobile-menu {
     &__backdrop {
-      transition: $mainTransition;
-      background: #adadadad;
+      // transition: $mainTransition;
+      // background: #adadadad;
       position: fixed;
       top: 0;
       right: 0;
@@ -291,7 +291,6 @@
   display: flex;
   border: none;
   background-color: transparent;
-  margin-top: 19px;
 }
 
 .mobile-menu__open-icon {
@@ -492,7 +491,7 @@
       transition: $mainTransition;
       top: 0;
       right: 0;
-      background: #ffffffb2;
+      // background: #ffffffb2;
     }
     &__window {
     //   animation: animateX 2000ms forwards;
