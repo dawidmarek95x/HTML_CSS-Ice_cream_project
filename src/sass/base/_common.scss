@@ -30,6 +30,7 @@ img {
 }
 
 button {
+  transition: background-color $mainTransition;
   cursor: $cursor;
 }
 
