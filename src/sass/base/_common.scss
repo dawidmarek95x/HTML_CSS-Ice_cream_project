@@ -2,6 +2,9 @@ body {
   font-family: $mainFont;
   font-size: $fontSizePrimaryMobile;
   color: $colorFont1;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 h1,
