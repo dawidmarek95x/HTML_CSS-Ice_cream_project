@@ -37,3 +37,8 @@ img {
     font-size: $fontSizePrimary;
   }
 }
+
+// transition for buttons
+button {
+  transition: background-color $mainTransition;
+}

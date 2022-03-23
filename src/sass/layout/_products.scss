@@ -105,6 +105,14 @@
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .product {
     &__card {
+      &--first::before,
+      &--second::before,
+      &--third::before {
+        width: 220px;
+        height: 233px;
+        background-position: center;
+        background-size: 100% 100%;
+      }
       &--first {
         &::before {
           background-image: url('../images/products/ice_cream_mobile@2x.png');

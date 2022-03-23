@@ -59,13 +59,15 @@
     width: 4px;
     height: 8px;
     margin-left: 12px;
-    fill: $mainColor;
+    fill: none;
+    stroke: $mainColor;
   }
 
   .mobile-menu__open-btn {
     margin-top: 0;
     margin-right: 30px;
     margin-left: 291px;
+    cursor: $cursor;
   }
   .menu__btn-label {
     color: $mainColor;
@@ -156,6 +158,7 @@
 .mobile-menu__btn {
   border: none;
   background: 0;
+  cursor: $cursor;
 }
 .menu-mobile__close-btn {
   position: absolute;
@@ -187,6 +190,8 @@
   .menu__arrow-icon {
     width: 5px;
     height: 8px;
+    fill: none;
+    stroke: $mainColor;
   }
 }
 // Mobile menu 768px - 1279px ruleset
@@ -195,7 +200,7 @@
   .mobile-menu {
     &__backdrop {
       transition: $mobileMenuTransition;
-      background: #adadadad;
+      background: #ffffffb0;
       position: fixed;
       top: 0;
       right: 0;

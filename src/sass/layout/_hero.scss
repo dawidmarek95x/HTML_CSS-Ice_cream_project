@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   background-color: $colorBg1;
+  overflow: hidden;
 
   &__header {
     width: 218px;
@@ -210,7 +211,7 @@
     }
 
     &__spot {
-      width: 51px;
+      width: 53px;
       text-align: right;
       background-image: url(../images/hero/tablet/hero-littlecircle.png);
       background-repeat: no-repeat;

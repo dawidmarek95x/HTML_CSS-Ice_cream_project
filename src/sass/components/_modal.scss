@@ -79,3 +79,17 @@
     line-height: 1.15;
   }
 }
+//Mobile view bug fix
+@media screen and (max-width:767px) {
+  .modal {
+    width: calc(100% - 20px);
+    min-height: 615px;
+    padding: 20px;
+    &__header {
+      font-size: 16px;
+    }
+    .application-form__policy {
+      margin-bottom: 20px;
+    }
+  }
+}
