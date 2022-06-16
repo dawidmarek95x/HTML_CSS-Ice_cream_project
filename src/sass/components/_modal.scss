@@ -30,6 +30,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%);
+  overflow: auto;
 }
 
 .modal__close-btn {
@@ -67,6 +68,12 @@
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .modal {
     padding: 20px;
@@ -76,12 +83,6 @@
   }
 }
 
-@media screen and (min-width: 480px) {
-  .modal {
-    width: 450px;
-    overflow: auto;
-  }
-}
 
 @media screen and (min-width: 1200px) {
   .modal {
