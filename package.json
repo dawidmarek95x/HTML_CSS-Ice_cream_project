@@ -3,20 +3,20 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https:// dawidmarek95x.github.io/team-project-1",
+  "homepage": "https://dawidmarek95x.github.io/HTML_CSS-Ice_cream_project/",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-project-1/"
+    "build": "parcel build src/*.html --public-url /HTML_CSS-Ice_cream_project/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/dawidmarek95x/HTML_CSS-Ice_cream_project"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Dawid Marek <dawid.marek95x@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/dawidmarek95x/HTML_CSS-Ice_cream_project/issues"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
