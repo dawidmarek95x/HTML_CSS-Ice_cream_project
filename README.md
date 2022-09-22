@@ -1,48 +1,27 @@
-# parcel-project-template
+# IceCream website
 
-## Zalezności
+## Project info
+Website for an ice cream company. The project is characterized by an original design and a responsive layout.
 
-Na komputerze musi być zainstalowana LTS-wersja [Node.js](https://nodejs.org/en/).
+**Project link:** [IceCream website](https://dawidmarek95x.github.io/HTML_CSS-Ice_cream_project/)
 
-## Przed rozpoczęciem pracy
+## Technologies
+**Project was created with:**
 
-Jeden raz na projekt zainstalować wszystkie zalezności.
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
-```shell
-npm ci
-```
+## Team
+**Team Leader:**
+|| Dawid Marek
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dawid-marek95/)
 
-### Praca
+**Scrum Master:**
+|| Anna Ojdana
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anna-ojdana/)
 
-Włączyć tryp pracy.
-
-```shell
-npm run dev
-```
-
-W przeglądarce przejść na [http://localhost:1234](http://localhost:1234).
-
-### Deploy
-
-Kod będzie automatycznie się zbierać i robić deploy aktualnej wersji projektu 
-na GitHub Pages, w gałąź `gh-pages`, za kazdym razem jeśli zostaną wprowadzone zmiany w `main`. Na przykład, po bezpośrenim push lub po przyjęciu pull-request. Aby to działało musimy w pliku `package.json` zmienić pole `homepage` i skrypt
-`build`, zmieniając `nazwe_uzytkownika` i `nazwe_repozytorium` na swoje.
-
-```json
-"homepage": "https://nazwa_uzytkownika.github.io/nazwa_repozytorium",
-"scripts": {
-  "build": "parcel build src/*.html --public-url /nazwa_repozytorium/"
-},
-```
-
-Po jakimś czasie stronę mozna będzie zobaczyć na zywo pod adresem który 
-jest wpisany w poprawione właściwości `homepage`, na przykład
-[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
-
-## Pliki i folderzy
-
-- Wszystkie partials plików stylów powinny być w folderze `src/sass` i importować się w
-  `src/sass/main.scss`
-- Zdjęcia dodawajcie w folder `src/images`, przed tym zoptymizujcie te zdjęcia które dodajecie. Program po prostu 
-  kopiuje wykorzystane zdjęcia aby system nie musiał optymizować je, bo na słabych komputerach 
-  to moze zająć duzo czasu.
+**Front-end developers:**
+|| Marek Kalus
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marek-kalus/)
+|| Patryk Tomaszek
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/patryk-tomasz-tomaszek-879ba5244/)
+|| Tomasz Bielecki
