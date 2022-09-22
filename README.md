@@ -12,16 +12,21 @@ Website for an ice cream company. The project is characterized by an original de
 
 ## Team
 **Team Leader:**
+
 || Dawid Marek
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dawid-marek95/)
 
 **Scrum Master:**
+
 || Anna Ojdana
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anna-ojdana/)
 
 **Front-end developers:**
+
 || Marek Kalus
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marek-kalus/)
+
 || Patryk Tomaszek
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/patryk-tomasz-tomaszek-879ba5244/)
+
 || Tomasz Bielecki
